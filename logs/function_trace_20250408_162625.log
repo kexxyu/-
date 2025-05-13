@@ -1,0 +1,7 @@
+2025-04-08 16:26:29,215 - log_utils.py:56 - wrapper - 调用函数: __main__.__init__ | 来自: main.py:1234 - <module> | 参数: {'self': <__main__.MaYun object at 0x000001709CFBE160>}
+2025-04-08 16:26:29,562 - log_utils.py:56 - wrapper - 调用函数: __main__.__init__ | 来自: main.py:1048 - __init__ | 参数: {'self': <__main__.Worker object at 0x000001709EA9E700>}
+2025-04-08 16:26:29,627 - log_utils.py:65 - wrapper - 函数返回: __main__.__init__ | 返回值: None
+2025-04-08 16:26:29,627 - log_utils.py:56 - wrapper - 调用函数: __main__.init_info | 来自: main.py:1049 - __init__ | 参数: {'self': <__main__.MaYun object at 0x000001709CFBE160>}
+2025-04-08 16:26:29,686 - log_utils.py:65 - wrapper - 函数返回: __main__.init_info | 返回值: None
+2025-04-08 16:26:29,686 - log_utils.py:65 - wrapper - 函数返回: __main__.__init__ | 返回值: None
+2025-04-08 16:31:32,740 - log_utils.py:56 - wrapper - 调用函数: __main__.auto_game | 来自: main.py:1236 - <module> | 参数: {'self': <__main__.MaYun object at 0x000001709CFBE160>, 'result': False}

@@ -1,0 +1,6 @@
+2025-04-08 16:40:27,493 - log_utils.py:56 - wrapper - 调用函数: __main__.__init__ | 来自: main.py:1234 - <module> | 参数: {'self': <__main__.MaYun object at 0x0000023469BEF160>}
+2025-04-08 16:40:27,917 - log_utils.py:56 - wrapper - 调用函数: __main__.__init__ | 来自: main.py:1048 - __init__ | 参数: {'self': <__main__.Worker object at 0x000002346B6CD700>}
+2025-04-08 16:40:28,015 - log_utils.py:65 - wrapper - 函数返回: __main__.__init__ | 返回值: None
+2025-04-08 16:40:28,015 - log_utils.py:56 - wrapper - 调用函数: __main__.init_info | 来自: main.py:1049 - __init__ | 参数: {'self': <__main__.MaYun object at 0x0000023469BEF160>}
+2025-04-08 16:40:28,068 - log_utils.py:65 - wrapper - 函数返回: __main__.init_info | 返回值: None
+2025-04-08 16:40:28,070 - log_utils.py:65 - wrapper - 函数返回: __main__.__init__ | 返回值: None

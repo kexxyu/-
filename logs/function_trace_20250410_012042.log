@@ -1,0 +1,24 @@
+01:20:46 - 来自: main.py:43 - <module>                          | 调用函数            | GameHelper.__init__                      | 参数: {'self': '<GameHelper.GameHelper object at 0x0000021FF6385250>'}
+01:20:46 - 来自: GameHelper.py:146 - __init__                   | 调用函数            | GameHelper.read_json                     | 参数: {}
+01:20:46 - 来自: GameHelper.py:146 - __init__                   | 函数返回            | GameHelper.read_json                     | 返回值: {'window': 0, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}
+01:20:46 - 来自: GameHelper.py:163 - __init__                   | 调用函数            | GameHelper.write_json                    | 参数: {'data': "{'window': 0, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}"}
+01:20:46 - 来自: GameHelper.py:163 - __init__                   | 函数返回            | GameHelper.write_json                    | 返回值: None
+01:20:46 - 来自: GameHelper.py:166 - __init__                   | 调用函数            | GameHelper.GetZoomRate                   | 参数: {'self': '<GameHelper.GameHelper object at 0x0000021FF6385250>'}
+01:20:46 - 来自: GameHelper.py:166 - __init__                   | 函数返回            | GameHelper.GetZoomRate                   | 返回值: None
+01:20:46 - 来自: main.py:43 - <module>                          | 函数返回            | GameHelper.__init__                      | 返回值: None
+01:20:47 - 来自: main.py:1234 - <module>                        | 调用函数            | __main__.__init__                        | 参数: {'self': '<__main__.MaYun object at 0x0000021FA27C3EE0>'}
+01:20:47 - 来自: main.py:1048 - __init__                        | 调用函数            | __main__.__init__                        | 参数: {'self': '<__main__.Worker object at 0x0000021FA42A34C0>'}
+01:20:47 - 来自: main.py:1048 - __init__                        | 函数返回            | __main__.__init__                        | 返回值: None
+01:20:47 - 来自: main.py:1049 - __init__                        | 调用函数            | __main__.init_info                       | 参数: {'self': '<__main__.MaYun object at 0x0000021FA27C3EE0>'}
+01:20:47 - 来自: main.py:1130 - init_info                       | 调用函数            | GameHelper.__init__                      | 参数: {'self': '<GameHelper.GameHelper object at 0x0000021FA2647D90>'}
+01:20:47 - 来自: GameHelper.py:146 - __init__                   | 调用函数            | GameHelper.read_json                     | 参数: {}
+01:20:47 - 来自: GameHelper.py:146 - __init__                   | 函数返回            | GameHelper.read_json                     | 返回值: {'window': 0, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}
+01:20:47 - 来自: GameHelper.py:163 - __init__                   | 调用函数            | GameHelper.write_json                    | 参数: {'data': "{'window': 0, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}"}
+01:20:47 - 来自: GameHelper.py:163 - __init__                   | 函数返回            | GameHelper.write_json                    | 返回值: None
+01:20:47 - 来自: GameHelper.py:166 - __init__                   | 调用函数            | GameHelper.GetZoomRate                   | 参数: {'self': '<GameHelper.GameHelper object at 0x0000021FA2647D90>'}
+01:20:47 - 来自: GameHelper.py:166 - __init__                   | 函数返回            | GameHelper.GetZoomRate                   | 返回值: None
+01:20:47 - 来自: main.py:1130 - init_info                       | 函数返回            | GameHelper.__init__                      | 返回值: None
+01:20:47 - 来自: main.py:1131 - init_info                       | 调用函数            | GameHelper.read_json                     | 参数: {}
+01:20:47 - 来自: main.py:1131 - init_info                       | 函数返回            | GameHelper.read_json                     | 返回值: {'window': 0, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}
+01:20:47 - 来自: main.py:1049 - __init__                        | 函数返回            | __main__.init_info                       | 返回值: None
+01:20:47 - 来自: main.py:1234 - <module>                        | 函数返回            | __main__.__init__                        | 返回值: None

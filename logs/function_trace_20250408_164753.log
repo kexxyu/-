@@ -1,0 +1,12 @@
+2025-04-08 16:47:56,448 - log_utils.py:56 - wrapper - 调用函数: __main__.__init__ | 来自: main.py:1234 - <module> | 参数: {'self': <__main__.MaYun object at 0x000002291DB0E1F0>}
+2025-04-08 16:47:56,662 - log_utils.py:56 - wrapper - 调用函数: __main__.__init__ | 来自: main.py:1048 - __init__ | 参数: {'self': <__main__.Worker object at 0x000002291F5EC790>}
+2025-04-08 16:47:56,713 - log_utils.py:65 - wrapper - 函数返回: __main__.__init__ | 返回值: None
+2025-04-08 16:47:56,713 - log_utils.py:56 - wrapper - 调用函数: __main__.init_info | 来自: main.py:1049 - __init__ | 参数: {'self': <__main__.MaYun object at 0x000002291DB0E1F0>}
+2025-04-08 16:47:56,775 - log_utils.py:65 - wrapper - 函数返回: __main__.init_info | 返回值: None
+2025-04-08 16:47:56,775 - log_utils.py:65 - wrapper - 函数返回: __main__.__init__ | 返回值: None
+2025-04-08 16:48:00,948 - log_utils.py:56 - wrapper - 调用函数: __main__.stop | 来自: main.py:1236 - <module> | 参数: {'self': <__main__.MaYun object at 0x000002291DB0E1F0>, 'result': False}
+2025-04-08 16:48:00,959 - log_utils.py:56 - wrapper - 调用函数: __main__.init_interface | 来自: main.py:1096 - stop | 参数: {'self': <__main__.MaYun object at 0x000002291DB0E1F0>, 'result': 1}
+2025-04-08 16:48:00,961 - log_utils.py:56 - wrapper - 调用函数: __main__.recorder2zero | 来自: main.py:1150 - init_interface | 参数: {'self': <__main__.MaYun object at 0x000002291DB0E1F0>}
+2025-04-08 16:48:00,962 - log_utils.py:65 - wrapper - 函数返回: __main__.recorder2zero | 返回值: None
+2025-04-08 16:48:00,964 - log_utils.py:65 - wrapper - 函数返回: __main__.init_interface | 返回值: None
+2025-04-08 16:48:00,965 - log_utils.py:65 - wrapper - 函数返回: __main__.stop | 返回值: None

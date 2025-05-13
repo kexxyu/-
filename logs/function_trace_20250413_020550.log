@@ -1,0 +1,72 @@
+02:05:50 - 来自: test_screenshot.py:21 - __init__               | 调用函数            | GameHelper.__init__                      | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>'}
+02:05:50 - 来自: GameHelper.py:146 - __init__                   | 调用函数            | GameHelper.read_json                     | 参数: {}
+02:05:50 - 来自: GameHelper.py:146 - __init__                   | 函数返回            | GameHelper.read_json                     | 返回值: {'window': 1, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}
+02:05:50 - 来自: GameHelper.py:163 - __init__                   | 调用函数            | GameHelper.write_json                    | 参数: {'data': "{'window': 1, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}"}
+02:05:50 - 来自: GameHelper.py:163 - __init__                   | 函数返回            | GameHelper.write_json                    | 返回值: None
+02:05:50 - 来自: GameHelper.py:166 - __init__                   | 调用函数            | GameHelper.GetZoomRate                   | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>'}
+02:05:50 - 来自: GameHelper.py:166 - __init__                   | 函数返回            | GameHelper.GetZoomRate                   | 返回值: None
+02:05:51 - 来自: test_screenshot.py:21 - __init__               | 函数返回            | GameHelper.__init__                      | 返回值: None
+02:06:01 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:06:01 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF23E7CA0>
+02:06:12 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:06:12 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E23430>
+02:06:23 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:06:23 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E23340>
+02:06:29 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:06:29 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E23550>
+02:06:40 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:06:40 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E236D0>
+02:06:49 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:06:49 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E237C0>
+02:06:52 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:06:52 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E238B0>
+02:07:26 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:07:26 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E239A0>
+02:07:30 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:07:30 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E23A90>
+02:07:33 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:07:33 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E23B80>
+02:07:35 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:07:35 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E23C70>
+02:07:45 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:07:45 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E23D60>
+02:07:56 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:07:56 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E23E50>
+02:08:05 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:08:05 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E23F40>
+02:08:21 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:08:21 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF256F040>
+02:08:24 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:08:24 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF256F160>
+02:08:41 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:08:41 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF256F250>
+02:09:01 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:09:01 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF256F340>
+02:09:07 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:09:07 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF256F430>
+02:09:29 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:09:29 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF256F520>
+02:09:45 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:09:45 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF256F610>
+02:10:00 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:10:00 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF256F700>
+02:10:03 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:10:03 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF256F7F0>
+02:10:41 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:10:41 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF256F8E0>
+02:11:44 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:11:44 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF256F9D0>
+02:12:34 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:12:34 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF23E7CA0>
+02:12:47 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:12:47 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E23CD0>
+02:13:34 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:13:34 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E23EE0>
+02:14:16 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:14:16 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E23AF0>
+02:14:18 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:14:19 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E239A0>
+02:15:47 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:15:47 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E23850>
+02:16:37 - 来自: test_screenshot.py:84 - take_screenshot        | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x000001DEF23E7C70>', 'region': 'None'}
+02:16:37 - 来自: test_screenshot.py:84 - take_screenshot        | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x1DEF2E235E0>

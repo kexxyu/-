@@ -1,0 +1,101 @@
+2025-04-08 16:54:04,738 - log_utils.py:76 - wrapper - 调用函数: __main__.__init__ | 来自: main.py:1234 - <module> | 参数: {'self': '<__main__.MaYun object at 0x000001A12088E1F0>'}
+2025-04-08 16:54:05,187 - log_utils.py:76 - wrapper - 调用函数: __main__.__init__ | 来自: main.py:1048 - __init__ | 参数: {'self': '<__main__.Worker object at 0x000001A12236D790>'}
+2025-04-08 16:54:05,255 - log_utils.py:89 - wrapper - 函数返回: __main__.__init__ | 返回值: None
+2025-04-08 16:54:05,255 - log_utils.py:76 - wrapper - 调用函数: __main__.init_info | 来自: main.py:1049 - __init__ | 参数: {'self': '<__main__.MaYun object at 0x000001A12088E1F0>'}
+2025-04-08 16:54:05,308 - log_utils.py:89 - wrapper - 函数返回: __main__.init_info | 返回值: None
+2025-04-08 16:54:05,309 - log_utils.py:89 - wrapper - 函数返回: __main__.__init__ | 返回值: None
+2025-04-08 16:54:07,825 - log_utils.py:76 - wrapper - 调用函数: __main__.init_threshold | 来自: main.py:1236 - <module> | 参数: {'args': '(<__main__.MaYun object at 0x000001A12088E1F0>, False)', 'kwargs': '{}'}
+2025-04-08 16:54:07,826 - log_utils.py:100 - wrapper - 函数异常: __main__.init_threshold | 异常类型: TypeError | 异常信息: init_threshold() takes 1 positional argument but 2 were given | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 81, in wrapper
+    result = func(*args, **kwargs)
+TypeError: init_threshold() takes 1 positional argument but 2 were given
+
+2025-04-08 16:54:10,678 - log_utils.py:76 - wrapper - 调用函数: __main__.init_threshold | 来自: main.py:1236 - <module> | 参数: {'args': '(<__main__.MaYun object at 0x000001A12088E1F0>, False)', 'kwargs': '{}'}
+2025-04-08 16:54:10,678 - log_utils.py:100 - wrapper - 函数异常: __main__.init_threshold | 异常类型: TypeError | 异常信息: init_threshold() takes 1 positional argument but 2 were given | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 81, in wrapper
+    result = func(*args, **kwargs)
+TypeError: init_threshold() takes 1 positional argument but 2 were given
+
+2025-04-08 16:54:17,117 - log_utils.py:76 - wrapper - 调用函数: __main__.auto_game | 来自: main.py:1236 - <module> | 参数: {'self': '<__main__.MaYun object at 0x000001A12088E1F0>', 'result': 'False'}
+2025-04-08 16:54:17,118 - log_utils.py:76 - wrapper - 调用函数: __main__.run | 来自: 未知调用者 | 参数: {'self': '<__main__.Worker object at 0x000001A12236D790>'}
+2025-04-08 16:54:17,119 - log_utils.py:76 - wrapper - 调用函数: __main__.init_datas | 来自: main.py:228 - run | 参数: {'self': '<__main__.Worker object at 0x000001A12236D790>'}
+2025-04-08 16:54:17,173 - log_utils.py:89 - wrapper - 函数返回: __main__.auto_game | 返回值: None
+2025-04-08 16:54:17,174 - log_utils.py:76 - wrapper - 调用函数: __main__.init_interface | 来自: main.py:1236 - <module> | 参数: {'self': '<__main__.MaYun object at 0x000001A12088E1F0>', 'result': '1'}
+2025-04-08 16:54:17,174 - log_utils.py:76 - wrapper - 调用函数: __main__.recorder2zero | 来自: main.py:1150 - init_interface | 参数: {'self': '<__main__.MaYun object at 0x000001A12088E1F0>'}
+2025-04-08 16:54:17,175 - log_utils.py:89 - wrapper - 函数返回: __main__.recorder2zero | 返回值: None
+2025-04-08 16:54:17,175 - log_utils.py:89 - wrapper - 函数返回: __main__.init_interface | 返回值: None
+2025-04-08 16:54:17,175 - log_utils.py:76 - wrapper - 调用函数: __main__.write_threshold | 来自: main.py:1236 - <module> | 参数: {'self': '<__main__.MaYun object at 0x000001A12088E1F0>', 'result': '1'}
+2025-04-08 16:54:17,176 - log_utils.py:89 - wrapper - 函数返回: __main__.write_threshold | 返回值: None
+2025-04-08 16:54:17,220 - log_utils.py:100 - wrapper - 函数异常: __main__.init_datas | 异常类型: KeyError | 异常信息: 'state' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 81, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 265, in init_datas
+    self.statement = data["state"]
+KeyError: 'state'
+
+2025-04-08 16:54:17,220 - log_utils.py:76 - wrapper - 调用函数: __main__.before_start | 来自: main.py:246 - run | 参数: {'self': '<__main__.Worker object at 0x000001A12236D790>'}
+2025-04-08 16:54:17,220 - log_utils.py:76 - wrapper - 调用函数: __main__.find_my_cards | 来自: main.py:508 - before_start | 参数: {'self': '<__main__.Worker object at 0x000001A12236D790>'}
+2025-04-08 16:54:17,222 - log_utils.py:100 - wrapper - 函数异常: __main__.find_my_cards | 异常类型: error | 异常信息: (1400, 'GetWindowRect', '无效的窗口句柄。') | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 81, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 307, in find_my_cards
+    img = helper.Screenshot()
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\GameHelper.py", line 172, in Screenshot
+    left, top, right, bot = win32gui.GetWindowRect(hwnd)
+pywintypes.error: (1400, 'GetWindowRect', '无效的窗口句柄。')
+
+2025-04-08 16:54:17,222 - log_utils.py:100 - wrapper - 函数异常: __main__.before_start | 异常类型: TypeError | 异常信息: argument of type 'NoneType' is not iterable | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 81, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 510, in before_start
+    if "DX222" in self.user_hand_cards_real:
+TypeError: argument of type 'NoneType' is not iterable
+
+2025-04-08 16:54:17,222 - log_utils.py:76 - wrapper - 调用函数: __main__.init_cards | 来自: main.py:247 - run | 参数: {'self': '<__main__.Worker object at 0x000001A12236D790>'}
+2025-04-08 16:54:17,223 - log_utils.py:76 - wrapper - 调用函数: __main__.state_display | 来自: main.py:1236 - <module> | 参数: {'self': '<__main__.MaYun object at 0x000001A12088E1F0>', 'result': '出牌前阶段'}
+2025-04-08 16:54:17,223 - log_utils.py:100 - wrapper - 函数异常: __main__.init_cards | 异常类型: TypeError | 异常信息: object of type 'NoneType' has no len() | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 81, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 661, in init_cards
+    while len(self.three_cards_real) != 3:
+TypeError: object of type 'NoneType' has no len()
+
+2025-04-08 16:54:17,223 - log_utils.py:89 - wrapper - 函数返回: __main__.state_display | 返回值: None
+2025-04-08 16:54:18,894 - log_utils.py:76 - wrapper - 调用函数: __main__.auto_game | 来自: main.py:1236 - <module> | 参数: {'self': '<__main__.MaYun object at 0x000001A12088E1F0>', 'result': 'False'}
+2025-04-08 16:54:18,942 - log_utils.py:89 - wrapper - 函数返回: __main__.auto_game | 返回值: None
+2025-04-08 16:54:19,228 - log_utils.py:76 - wrapper - 调用函数: __main__.before_start | 来自: main.py:246 - run | 参数: {'self': '<__main__.Worker object at 0x000001A12236D790>'}
+2025-04-08 16:54:19,228 - log_utils.py:76 - wrapper - 调用函数: __main__.find_my_cards | 来自: main.py:508 - before_start | 参数: {'self': '<__main__.Worker object at 0x000001A12236D790>'}
+2025-04-08 16:54:19,229 - log_utils.py:100 - wrapper - 函数异常: __main__.find_my_cards | 异常类型: error | 异常信息: (1400, 'GetWindowRect', '无效的窗口句柄。') | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 81, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 307, in find_my_cards
+    img = helper.Screenshot()
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\GameHelper.py", line 172, in Screenshot
+    left, top, right, bot = win32gui.GetWindowRect(hwnd)
+pywintypes.error: (1400, 'GetWindowRect', '无效的窗口句柄。')
+
+2025-04-08 16:54:19,229 - log_utils.py:100 - wrapper - 函数异常: __main__.before_start | 异常类型: TypeError | 异常信息: argument of type 'NoneType' is not iterable | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 81, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 510, in before_start
+    if "DX222" in self.user_hand_cards_real:
+TypeError: argument of type 'NoneType' is not iterable
+
+2025-04-08 16:54:19,230 - log_utils.py:76 - wrapper - 调用函数: __main__.init_cards | 来自: main.py:247 - run | 参数: {'self': '<__main__.Worker object at 0x000001A12236D790>'}
+2025-04-08 16:54:19,230 - log_utils.py:76 - wrapper - 调用函数: __main__.state_display | 来自: main.py:1236 - <module> | 参数: {'self': '<__main__.MaYun object at 0x000001A12088E1F0>', 'result': '出牌前阶段'}
+2025-04-08 16:54:19,231 - log_utils.py:89 - wrapper - 函数返回: __main__.state_display | 返回值: None
+2025-04-08 16:54:19,231 - log_utils.py:100 - wrapper - 函数异常: __main__.init_cards | 异常类型: TypeError | 异常信息: object of type 'NoneType' has no len() | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 81, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 661, in init_cards
+    while len(self.three_cards_real) != 3:
+TypeError: object of type 'NoneType' has no len()
+
+2025-04-08 16:54:20,088 - log_utils.py:76 - wrapper - 调用函数: __main__.hand_game | 来自: main.py:1236 - <module> | 参数: {'self': '<__main__.MaYun object at 0x000001A12088E1F0>', 'result': 'False'}
+2025-04-08 16:54:20,135 - log_utils.py:89 - wrapper - 函数返回: __main__.hand_game | 返回值: None
+2025-04-08 16:54:21,111 - log_utils.py:76 - wrapper - 调用函数: __main__.stop | 来自: main.py:1236 - <module> | 参数: {'self': '<__main__.MaYun object at 0x000001A12088E1F0>', 'result': 'False'}
+2025-04-08 16:54:21,112 - log_utils.py:76 - wrapper - 调用函数: __main__.init_interface | 来自: main.py:1096 - stop | 参数: {'self': '<__main__.MaYun object at 0x000001A12088E1F0>', 'result': '1'}
+2025-04-08 16:54:21,113 - log_utils.py:76 - wrapper - 调用函数: __main__.recorder2zero | 来自: main.py:1150 - init_interface | 参数: {'self': '<__main__.MaYun object at 0x000001A12088E1F0>'}
+2025-04-08 16:54:21,113 - log_utils.py:89 - wrapper - 函数返回: __main__.recorder2zero | 返回值: None
+2025-04-08 16:54:21,113 - log_utils.py:89 - wrapper - 函数返回: __main__.init_interface | 返回值: None
+2025-04-08 16:54:21,115 - log_utils.py:89 - wrapper - 函数返回: __main__.stop | 返回值: None

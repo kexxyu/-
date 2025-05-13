@@ -1,0 +1,285 @@
+20:58:51 - 来自: main.py:43 - <module>                          | 调用函数            | GameHelper.__init__                      | 参数: {'self': '<GameHelper.GameHelper object at 0x00000274E1025250>'}
+20:58:51 - 来自: GameHelper.py:146 - __init__                   | 调用函数            | GameHelper.read_json                     | 参数: {}
+20:58:51 - 来自: GameHelper.py:146 - __init__                   | 函数返回            | GameHelper.read_json                     | 返回值: {'window': 1, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}
+20:58:51 - 来自: GameHelper.py:163 - __init__                   | 调用函数            | GameHelper.write_json                    | 参数: {'data': "{'window': 1, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}"}
+20:58:51 - 来自: GameHelper.py:163 - __init__                   | 函数返回            | GameHelper.write_json                    | 返回值: None
+20:58:51 - 来自: GameHelper.py:166 - __init__                   | 调用函数            | GameHelper.GetZoomRate                   | 参数: {'self': '<GameHelper.GameHelper object at 0x00000274E1025250>'}
+20:58:51 - 来自: GameHelper.py:166 - __init__                   | 函数返回            | GameHelper.GetZoomRate                   | 返回值: None
+20:58:51 - 来自: main.py:43 - <module>                          | 函数返回            | GameHelper.__init__                      | 返回值: None
+20:58:51 - 来自: main.py:1255 - <module>                        | 调用函数            | __main__.__init__                        | 参数: {'self': '<__main__.MaYun object at 0x000002748D36E040>'}
+20:58:51 - 来自: main.py:1069 - __init__                        | 调用函数            | __main__.__init__                        | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:58:52 - 来自: main.py:1069 - __init__                        | 函数返回            | __main__.__init__                        | 返回值: None
+20:58:52 - 来自: main.py:1070 - __init__                        | 调用函数            | __main__.init_info                       | 参数: {'self': '<__main__.MaYun object at 0x000002748D36E040>'}
+20:58:52 - 来自: main.py:1151 - init_info                       | 调用函数            | GameHelper.__init__                      | 参数: {'self': '<GameHelper.GameHelper object at 0x000002748D1E9DF0>'}
+20:58:52 - 来自: GameHelper.py:146 - __init__                   | 调用函数            | GameHelper.read_json                     | 参数: {}
+20:58:52 - 来自: GameHelper.py:146 - __init__                   | 函数返回            | GameHelper.read_json                     | 返回值: {'window': 1, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}
+20:58:52 - 来自: GameHelper.py:163 - __init__                   | 调用函数            | GameHelper.write_json                    | 参数: {'data': "{'window': 1, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}"}
+20:58:52 - 来自: GameHelper.py:163 - __init__                   | 函数返回            | GameHelper.write_json                    | 返回值: None
+20:58:52 - 来自: GameHelper.py:166 - __init__                   | 调用函数            | GameHelper.GetZoomRate                   | 参数: {'self': '<GameHelper.GameHelper object at 0x000002748D1E9DF0>'}
+20:58:52 - 来自: GameHelper.py:166 - __init__                   | 函数返回            | GameHelper.GetZoomRate                   | 返回值: None
+20:58:52 - 来自: main.py:1151 - init_info                       | 函数返回            | GameHelper.__init__                      | 返回值: None
+20:58:52 - 来自: main.py:1152 - init_info                       | 调用函数            | GameHelper.read_json                     | 参数: {}
+20:58:52 - 来自: main.py:1152 - init_info                       | 函数返回            | GameHelper.read_json                     | 返回值: {'window': 1, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}
+20:58:52 - 来自: main.py:1070 - __init__                        | 函数返回            | __main__.init_info                       | 返回值: None
+20:58:52 - 来自: main.py:1255 - <module>                        | 函数返回            | __main__.__init__                        | 返回值: None
+20:58:56 - 来自: main.py:1257 - <module>                        | 调用函数            | __main__.auto_game                       | 参数: {'self': '<__main__.MaYun object at 0x000002748D36E040>', 'result': 'False'}
+20:58:56 - 来自: main.py:1103 - auto_game                       | 调用函数            | GameHelper.__init__                      | 参数: {'self': '<GameHelper.GameHelper object at 0x000002748EEC6520>'}
+20:58:56 - 来自: GameHelper.py:146 - __init__                   | 调用函数            | GameHelper.read_json                     | 参数: {}
+20:58:56 - 来自: 未知调用者                                          | 调用函数            | __main__.run                             | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:58:56 - 来自: main.py:230 - run                              | 调用函数            | __main__.init_datas                      | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:58:56 - 来自: GameHelper.py:146 - __init__                   | 函数返回            | GameHelper.read_json                     | 返回值: {'window': 1, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}
+20:58:56 - 来自: GameHelper.py:163 - __init__                   | 调用函数            | GameHelper.write_json                    | 参数: {'data': "{'window': 1, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}"}
+20:58:56 - 来自: GameHelper.py:163 - __init__                   | 函数返回            | GameHelper.write_json                    | 返回值: None
+20:58:56 - 来自: GameHelper.py:166 - __init__                   | 调用函数            | GameHelper.GetZoomRate                   | 参数: {'self': '<GameHelper.GameHelper object at 0x000002748EEC6520>'}
+20:58:56 - 来自: GameHelper.py:166 - __init__                   | 函数返回            | GameHelper.GetZoomRate                   | 返回值: None
+20:58:56 - 来自: main.py:1103 - auto_game                       | 函数返回            | GameHelper.__init__                      | 返回值: None
+20:58:56 - 来自: main.py:1257 - <module>                        | 函数返回            | __main__.auto_game                       | 返回值: None
+20:58:56 - 来自: main.py:1257 - <module>                        | 调用函数            | __main__.init_interface                  | 参数: {'self': '<__main__.MaYun object at 0x000002748D36E040>', 'result': '1'}
+20:58:56 - 来自: main.py:1171 - init_interface                  | 调用函数            | __main__.recorder2zero                   | 参数: {'self': '<__main__.MaYun object at 0x000002748D36E040>'}
+20:58:56 - 来自: main.py:1171 - init_interface                  | 函数返回            | __main__.recorder2zero                   | 返回值: None
+20:58:56 - 来自: main.py:1257 - <module>                        | 函数返回            | __main__.init_interface                  | 返回值: None
+20:58:56 - 来自: main.py:1257 - <module>                        | 调用函数            | __main__.write_threshold                 | 参数: {'self': '<__main__.MaYun object at 0x000002748D36E040>', 'result': '1'}
+20:58:56 - 来自: main.py:1142 - write_threshold                 | 调用函数            | GameHelper.read_json                     | 参数: {}
+20:58:56 - 来自: main.py:1142 - write_threshold                 | 函数返回            | GameHelper.read_json                     | 返回值: {'window': 1, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}
+20:58:56 - 来自: main.py:1147 - write_threshold                 | 调用函数            | GameHelper.write_json                    | 参数: {'data': "{'window': 1, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}"}
+20:58:56 - 来自: main.py:1147 - write_threshold                 | 函数返回            | GameHelper.write_json                    | 返回值: None
+20:58:56 - 来自: main.py:1257 - <module>                        | 函数返回            | __main__.write_threshold                 | 返回值: None
+20:58:56 - 来自: main.py:265 - init_datas                       | 调用函数            | GameHelper.read_json                     | 参数: {}
+20:58:56 - 来自: main.py:265 - init_datas                       | 函数返回            | GameHelper.read_json                     | 返回值: {'window': 1, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}
+20:58:56 - 来自: main.py:230 - run                              | 函数异常            | __main__.init_datas                      | 异常类型: KeyError | 异常信息: 'state' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 267, in init_datas
+    self.statement = data["state"]
+KeyError: 'state'
+
+20:58:56 - 来自: main.py:248 - run                              | 调用函数            | __main__.before_start                    | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:58:56 - 来自: main.py:513 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:58:56 - 来自: main.py:312 - find_my_cards                    | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x00000274E1025250>', 'region': 'None'}
+20:58:56 - 来自: main.py:312 - find_my_cards                    | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x2748EEBFD00>
+20:58:56 - 来自: main.py:513 - before_start                     | 函数异常            | __main__.find_my_cards                   | 异常类型: TypeError | 异常信息: cards_info() got an unexpected keyword argument 'mark' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 314, in find_my_cards
+    my_cards_real = self.cards_info(img, self.MyCardsPos, mark="m")
+TypeError: cards_info() got an unexpected keyword argument 'mark'
+
+20:58:56 - 来自: main.py:248 - run                              | 函数异常            | __main__.before_start                    | 异常类型: TypeError | 异常信息: argument of type 'NoneType' is not iterable | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 515, in before_start
+    if "DX222" in self.user_hand_cards_real:
+TypeError: argument of type 'NoneType' is not iterable
+
+20:58:56 - 来自: main.py:249 - run                              | 调用函数            | __main__.init_cards                      | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:58:56 - 来自: main.py:1257 - <module>                        | 调用函数            | __main__.state_display                   | 参数: {'self': '<__main__.MaYun object at 0x000002748D36E040>', 'result': '出牌前阶段'}
+20:58:56 - 来自: main.py:1257 - <module>                        | 函数返回            | __main__.state_display                   | 返回值: None
+20:58:56 - 来自: main.py:249 - run                              | 函数异常            | __main__.init_cards                      | 异常类型: TypeError | 异常信息: object of type 'NoneType' has no len() | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 666, in init_cards
+    while len(self.three_cards_real) != 3:
+TypeError: object of type 'NoneType' has no len()
+
+20:58:58 - 来自: main.py:248 - run                              | 调用函数            | __main__.before_start                    | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:58:58 - 来自: main.py:513 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:58:58 - 来自: main.py:312 - find_my_cards                    | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x00000274E1025250>', 'region': 'None'}
+20:58:58 - 来自: main.py:312 - find_my_cards                    | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x2748EEBBF40>
+20:58:58 - 来自: main.py:513 - before_start                     | 函数异常            | __main__.find_my_cards                   | 异常类型: TypeError | 异常信息: cards_info() got an unexpected keyword argument 'mark' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 314, in find_my_cards
+    my_cards_real = self.cards_info(img, self.MyCardsPos, mark="m")
+TypeError: cards_info() got an unexpected keyword argument 'mark'
+
+20:58:58 - 来自: main.py:248 - run                              | 函数异常            | __main__.before_start                    | 异常类型: TypeError | 异常信息: argument of type 'NoneType' is not iterable | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 515, in before_start
+    if "DX222" in self.user_hand_cards_real:
+TypeError: argument of type 'NoneType' is not iterable
+
+20:58:58 - 来自: main.py:249 - run                              | 调用函数            | __main__.init_cards                      | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:58:58 - 来自: main.py:1257 - <module>                        | 调用函数            | __main__.state_display                   | 参数: {'self': '<__main__.MaYun object at 0x000002748D36E040>', 'result': '出牌前阶段'}
+20:58:58 - 来自: main.py:1257 - <module>                        | 函数返回            | __main__.state_display                   | 返回值: None
+20:58:58 - 来自: main.py:249 - run                              | 函数异常            | __main__.init_cards                      | 异常类型: TypeError | 异常信息: object of type 'NoneType' has no len() | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 666, in init_cards
+    while len(self.three_cards_real) != 3:
+TypeError: object of type 'NoneType' has no len()
+
+20:59:00 - 来自: main.py:248 - run                              | 调用函数            | __main__.before_start                    | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:59:00 - 来自: main.py:513 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:59:00 - 来自: main.py:312 - find_my_cards                    | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x00000274E1025250>', 'region': 'None'}
+20:59:00 - 来自: main.py:312 - find_my_cards                    | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x2748EEBBCA0>
+20:59:00 - 来自: main.py:513 - before_start                     | 函数异常            | __main__.find_my_cards                   | 异常类型: TypeError | 异常信息: cards_info() got an unexpected keyword argument 'mark' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 314, in find_my_cards
+    my_cards_real = self.cards_info(img, self.MyCardsPos, mark="m")
+TypeError: cards_info() got an unexpected keyword argument 'mark'
+
+20:59:00 - 来自: main.py:248 - run                              | 函数异常            | __main__.before_start                    | 异常类型: TypeError | 异常信息: argument of type 'NoneType' is not iterable | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 515, in before_start
+    if "DX222" in self.user_hand_cards_real:
+TypeError: argument of type 'NoneType' is not iterable
+
+20:59:00 - 来自: main.py:249 - run                              | 调用函数            | __main__.init_cards                      | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:59:00 - 来自: main.py:1257 - <module>                        | 调用函数            | __main__.state_display                   | 参数: {'self': '<__main__.MaYun object at 0x000002748D36E040>', 'result': '出牌前阶段'}
+20:59:00 - 来自: main.py:1257 - <module>                        | 函数返回            | __main__.state_display                   | 返回值: None
+20:59:00 - 来自: main.py:249 - run                              | 函数异常            | __main__.init_cards                      | 异常类型: TypeError | 异常信息: object of type 'NoneType' has no len() | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 666, in init_cards
+    while len(self.three_cards_real) != 3:
+TypeError: object of type 'NoneType' has no len()
+
+20:59:02 - 来自: main.py:248 - run                              | 调用函数            | __main__.before_start                    | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:59:02 - 来自: main.py:513 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:59:02 - 来自: main.py:312 - find_my_cards                    | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x00000274E1025250>', 'region': 'None'}
+20:59:02 - 来自: main.py:312 - find_my_cards                    | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x2748EEBB2B0>
+20:59:02 - 来自: main.py:513 - before_start                     | 函数异常            | __main__.find_my_cards                   | 异常类型: TypeError | 异常信息: cards_info() got an unexpected keyword argument 'mark' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 314, in find_my_cards
+    my_cards_real = self.cards_info(img, self.MyCardsPos, mark="m")
+TypeError: cards_info() got an unexpected keyword argument 'mark'
+
+20:59:02 - 来自: main.py:248 - run                              | 函数异常            | __main__.before_start                    | 异常类型: TypeError | 异常信息: argument of type 'NoneType' is not iterable | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 515, in before_start
+    if "DX222" in self.user_hand_cards_real:
+TypeError: argument of type 'NoneType' is not iterable
+
+20:59:02 - 来自: main.py:249 - run                              | 调用函数            | __main__.init_cards                      | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:59:02 - 来自: main.py:1257 - <module>                        | 调用函数            | __main__.state_display                   | 参数: {'self': '<__main__.MaYun object at 0x000002748D36E040>', 'result': '出牌前阶段'}
+20:59:02 - 来自: main.py:1257 - <module>                        | 函数返回            | __main__.state_display                   | 返回值: None
+20:59:02 - 来自: main.py:249 - run                              | 函数异常            | __main__.init_cards                      | 异常类型: TypeError | 异常信息: object of type 'NoneType' has no len() | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 666, in init_cards
+    while len(self.three_cards_real) != 3:
+TypeError: object of type 'NoneType' has no len()
+
+20:59:04 - 来自: main.py:248 - run                              | 调用函数            | __main__.before_start                    | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:59:04 - 来自: main.py:513 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:59:04 - 来自: main.py:312 - find_my_cards                    | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x00000274E1025250>', 'region': 'None'}
+20:59:04 - 来自: main.py:312 - find_my_cards                    | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x2748EEB8DF0>
+20:59:04 - 来自: main.py:513 - before_start                     | 函数异常            | __main__.find_my_cards                   | 异常类型: TypeError | 异常信息: cards_info() got an unexpected keyword argument 'mark' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 314, in find_my_cards
+    my_cards_real = self.cards_info(img, self.MyCardsPos, mark="m")
+TypeError: cards_info() got an unexpected keyword argument 'mark'
+
+20:59:04 - 来自: main.py:248 - run                              | 函数异常            | __main__.before_start                    | 异常类型: TypeError | 异常信息: argument of type 'NoneType' is not iterable | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 515, in before_start
+    if "DX222" in self.user_hand_cards_real:
+TypeError: argument of type 'NoneType' is not iterable
+
+20:59:04 - 来自: main.py:249 - run                              | 调用函数            | __main__.init_cards                      | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:59:04 - 来自: main.py:1257 - <module>                        | 调用函数            | __main__.state_display                   | 参数: {'self': '<__main__.MaYun object at 0x000002748D36E040>', 'result': '出牌前阶段'}
+20:59:04 - 来自: main.py:1257 - <module>                        | 函数返回            | __main__.state_display                   | 返回值: None
+20:59:04 - 来自: main.py:249 - run                              | 函数异常            | __main__.init_cards                      | 异常类型: TypeError | 异常信息: object of type 'NoneType' has no len() | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 666, in init_cards
+    while len(self.three_cards_real) != 3:
+TypeError: object of type 'NoneType' has no len()
+
+20:59:06 - 来自: main.py:248 - run                              | 调用函数            | __main__.before_start                    | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:59:06 - 来自: main.py:513 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:59:06 - 来自: main.py:312 - find_my_cards                    | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x00000274E1025250>', 'region': 'None'}
+20:59:06 - 来自: main.py:312 - find_my_cards                    | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x2748EE818B0>
+20:59:06 - 来自: main.py:513 - before_start                     | 函数异常            | __main__.find_my_cards                   | 异常类型: TypeError | 异常信息: cards_info() got an unexpected keyword argument 'mark' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 314, in find_my_cards
+    my_cards_real = self.cards_info(img, self.MyCardsPos, mark="m")
+TypeError: cards_info() got an unexpected keyword argument 'mark'
+
+20:59:06 - 来自: main.py:248 - run                              | 函数异常            | __main__.before_start                    | 异常类型: TypeError | 异常信息: argument of type 'NoneType' is not iterable | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 515, in before_start
+    if "DX222" in self.user_hand_cards_real:
+TypeError: argument of type 'NoneType' is not iterable
+
+20:59:06 - 来自: main.py:249 - run                              | 调用函数            | __main__.init_cards                      | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:59:06 - 来自: main.py:1257 - <module>                        | 调用函数            | __main__.state_display                   | 参数: {'self': '<__main__.MaYun object at 0x000002748D36E040>', 'result': '出牌前阶段'}
+20:59:06 - 来自: main.py:1257 - <module>                        | 函数返回            | __main__.state_display                   | 返回值: None
+20:59:06 - 来自: main.py:249 - run                              | 函数异常            | __main__.init_cards                      | 异常类型: TypeError | 异常信息: object of type 'NoneType' has no len() | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 666, in init_cards
+    while len(self.three_cards_real) != 3:
+TypeError: object of type 'NoneType' has no len()
+
+20:59:08 - 来自: main.py:248 - run                              | 调用函数            | __main__.before_start                    | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:59:08 - 来自: main.py:513 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:59:08 - 来自: main.py:312 - find_my_cards                    | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x00000274E1025250>', 'region': 'None'}
+20:59:08 - 来自: main.py:312 - find_my_cards                    | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x2748EE81A30>
+20:59:08 - 来自: main.py:513 - before_start                     | 函数异常            | __main__.find_my_cards                   | 异常类型: TypeError | 异常信息: cards_info() got an unexpected keyword argument 'mark' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 314, in find_my_cards
+    my_cards_real = self.cards_info(img, self.MyCardsPos, mark="m")
+TypeError: cards_info() got an unexpected keyword argument 'mark'
+
+20:59:08 - 来自: main.py:248 - run                              | 函数异常            | __main__.before_start                    | 异常类型: TypeError | 异常信息: argument of type 'NoneType' is not iterable | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 515, in before_start
+    if "DX222" in self.user_hand_cards_real:
+TypeError: argument of type 'NoneType' is not iterable
+
+20:59:08 - 来自: main.py:249 - run                              | 调用函数            | __main__.init_cards                      | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:59:08 - 来自: main.py:1257 - <module>                        | 调用函数            | __main__.state_display                   | 参数: {'self': '<__main__.MaYun object at 0x000002748D36E040>', 'result': '出牌前阶段'}
+20:59:08 - 来自: main.py:1257 - <module>                        | 函数返回            | __main__.state_display                   | 返回值: None
+20:59:08 - 来自: main.py:249 - run                              | 函数异常            | __main__.init_cards                      | 异常类型: TypeError | 异常信息: object of type 'NoneType' has no len() | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 666, in init_cards
+    while len(self.three_cards_real) != 3:
+TypeError: object of type 'NoneType' has no len()
+
+20:59:10 - 来自: main.py:248 - run                              | 调用函数            | __main__.before_start                    | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:59:10 - 来自: main.py:513 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:59:10 - 来自: main.py:312 - find_my_cards                    | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x00000274E1025250>', 'region': 'None'}
+20:59:10 - 来自: main.py:312 - find_my_cards                    | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x2748EEB2A60>
+20:59:10 - 来自: main.py:513 - before_start                     | 函数异常            | __main__.find_my_cards                   | 异常类型: TypeError | 异常信息: cards_info() got an unexpected keyword argument 'mark' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 314, in find_my_cards
+    my_cards_real = self.cards_info(img, self.MyCardsPos, mark="m")
+TypeError: cards_info() got an unexpected keyword argument 'mark'
+
+20:59:10 - 来自: main.py:248 - run                              | 函数异常            | __main__.before_start                    | 异常类型: TypeError | 异常信息: argument of type 'NoneType' is not iterable | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 515, in before_start
+    if "DX222" in self.user_hand_cards_real:
+TypeError: argument of type 'NoneType' is not iterable
+
+20:59:10 - 来自: main.py:249 - run                              | 调用函数            | __main__.init_cards                      | 参数: {'self': '<__main__.Worker object at 0x000002748EE415E0>'}
+20:59:10 - 来自: main.py:1257 - <module>                        | 调用函数            | __main__.state_display                   | 参数: {'self': '<__main__.MaYun object at 0x000002748D36E040>', 'result': '出牌前阶段'}
+20:59:10 - 来自: main.py:1257 - <module>                        | 函数返回            | __main__.state_display                   | 返回值: None
+20:59:10 - 来自: main.py:249 - run                              | 函数异常            | __main__.init_cards                      | 异常类型: TypeError | 异常信息: object of type 'NoneType' has no len() | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\main.py", line 666, in init_cards
+    while len(self.three_cards_real) != 3:
+TypeError: object of type 'NoneType' has no len()
+
+20:59:12 - 来自: main.py:1257 - <module>                        | 调用函数            | __main__.stop                            | 参数: {'self': '<__main__.MaYun object at 0x000002748D36E040>', 'result': 'False'}
+20:59:12 - 来自: main.py:1117 - stop                            | 调用函数            | __main__.init_interface                  | 参数: {'self': '<__main__.MaYun object at 0x000002748D36E040>', 'result': '1'}
+20:59:12 - 来自: main.py:1171 - init_interface                  | 调用函数            | __main__.recorder2zero                   | 参数: {'self': '<__main__.MaYun object at 0x000002748D36E040>'}
+20:59:12 - 来自: main.py:1171 - init_interface                  | 函数返回            | __main__.recorder2zero                   | 返回值: None
+20:59:12 - 来自: main.py:1117 - stop                            | 函数返回            | __main__.init_interface                  | 返回值: None
+20:59:12 - 来自: main.py:1257 - <module>                        | 函数返回            | __main__.stop                            | 返回值: None

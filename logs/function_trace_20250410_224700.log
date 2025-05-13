@@ -1,0 +1,26 @@
+22:47:00 - 来自: test_screenshot.py:12 - <module>               | 调用函数            | GameHelper.__init__                      | 参数: {'self': '<GameHelper.GameHelper object at 0x00000234B01C5250>'}
+22:47:00 - 来自: GameHelper.py:146 - __init__                   | 调用函数            | GameHelper.read_json                     | 参数: {}
+22:47:00 - 来自: GameHelper.py:146 - __init__                   | 函数返回            | GameHelper.read_json                     | 返回值: {'window': 1, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}
+22:47:00 - 来自: GameHelper.py:163 - __init__                   | 调用函数            | GameHelper.write_json                    | 参数: {'data': "{'window': 1, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}"}
+22:47:00 - 来自: GameHelper.py:163 - __init__                   | 函数返回            | GameHelper.write_json                    | 返回值: None
+22:47:00 - 来自: GameHelper.py:166 - __init__                   | 调用函数            | GameHelper.GetZoomRate                   | 参数: {'self': '<GameHelper.GameHelper object at 0x00000234B01C5250>'}
+22:47:00 - 来自: GameHelper.py:166 - __init__                   | 函数返回            | GameHelper.GetZoomRate                   | 返回值: None
+22:47:00 - 来自: test_screenshot.py:12 - <module>               | 函数返回            | GameHelper.__init__                      | 返回值: None
+22:47:00 - 来自: test_screenshot.py:43 - visualize_regions      | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x00000234B01C5250>', 'region': 'None'}
+22:47:00 - 来自: test_screenshot.py:43 - visualize_regions      | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=1280x720 at 0x234C4F8CB80>
+22:47:02 - 来自: test_screenshot.py:75 - capture_individual_regions | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x00000234B01C5250>', 'region': '(160, 497, 933, 80)'}
+22:47:02 - 来自: test_screenshot.py:75 - capture_individual_regions | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=933x80 at 0x234C5077520>
+22:47:03 - 来自: test_screenshot.py:75 - capture_individual_regions | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x00000234B01C5250>', 'region': '(266, 370, 711, 100)'}
+22:47:03 - 来自: test_screenshot.py:75 - capture_individual_regions | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=711x100 at 0x234C50775B0>
+22:47:04 - 来自: test_screenshot.py:75 - capture_individual_regions | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x00000234B01C5250>', 'region': '(284, 248, 355, 106)'}
+22:47:04 - 来自: test_screenshot.py:75 - capture_individual_regions | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=355x106 at 0x234C5077640>
+22:47:04 - 来自: test_screenshot.py:75 - capture_individual_regions | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x00000234B01C5250>', 'region': '(640, 248, 355, 106)'}
+22:47:04 - 来自: test_screenshot.py:75 - capture_individual_regions | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=355x106 at 0x234C50776D0>
+22:47:05 - 来自: test_screenshot.py:75 - capture_individual_regions | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x00000234B01C5250>', 'region': '(533, 29, 195, 91)'}
+22:47:05 - 来自: test_screenshot.py:75 - capture_individual_regions | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=195x91 at 0x234C5077760>
+22:47:05 - 来自: test_screenshot.py:75 - capture_individual_regions | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x00000234B01C5250>', 'region': '(177, 400, 888, 106)'}
+22:47:05 - 来自: test_screenshot.py:75 - capture_individual_regions | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=888x106 at 0x234C50777F0>
+22:47:06 - 来自: test_screenshot.py:75 - capture_individual_regions | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x00000234B01C5250>', 'region': '(320, 320, 106, 71)'}
+22:47:06 - 来自: test_screenshot.py:75 - capture_individual_regions | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=106x71 at 0x234C5077880>
+22:47:06 - 来自: test_screenshot.py:75 - capture_individual_regions | 调用函数            | GameHelper.Screenshot                    | 参数: {'self': '<GameHelper.GameHelper object at 0x00000234B01C5250>', 'region': '(835, 320, 106, 71)'}
+22:47:06 - 来自: test_screenshot.py:75 - capture_individual_regions | 函数返回            | GameHelper.Screenshot                    | 返回值: <PIL.Image.Image image mode=RGB size=106x71 at 0x234C5077910>

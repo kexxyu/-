@@ -1,0 +1,240 @@
+20:57:35 - 来自: test_mouse_control.py:14 - __init__            | 调用函数            | GameHelper.__init__                      | 参数: {'self': '<GameHelper.GameHelper object at 0x0000018C1C56E970>'}
+20:57:35 - 来自: GameHelper.py:146 - __init__                   | 调用函数            | GameHelper.read_json                     | 参数: {}
+20:57:35 - 来自: GameHelper.py:146 - __init__                   | 函数返回            | GameHelper.read_json                     | 返回值: {'window': 1, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}
+20:57:35 - 来自: GameHelper.py:163 - __init__                   | 调用函数            | GameHelper.write_json                    | 参数: {'data': "{'window': 1, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}"}
+20:57:35 - 来自: GameHelper.py:163 - __init__                   | 函数返回            | GameHelper.write_json                    | 返回值: None
+20:57:35 - 来自: GameHelper.py:166 - __init__                   | 调用函数            | GameHelper.GetZoomRate                   | 参数: {'self': '<GameHelper.GameHelper object at 0x0000018C1C56E970>'}
+20:57:35 - 来自: GameHelper.py:166 - __init__                   | 函数返回            | GameHelper.GetZoomRate                   | 返回值: None
+20:57:35 - 来自: test_mouse_control.py:14 - __init__            | 函数返回            | GameHelper.__init__                      | 返回值: None
+20:58:02 - 来自: test_mouse_control.py:165 - click_mouse        | 调用函数            | GameHelper.LeftClick2                    | 参数: {'self': '<GameHelper.GameHelper object at 0x0000018C1C56E970>', 'pos': '(500, 300)'}
+20:58:02 - 来自: test_mouse_control.py:165 - click_mouse        | 函数返回            | GameHelper.LeftClick2                    | 返回值: None
+20:58:07 - 来自: test_mouse_control.py:165 - click_mouse        | 调用函数            | GameHelper.LeftClick2                    | 参数: {'self': '<GameHelper.GameHelper object at 0x0000018C1C56E970>', 'pos': '(500, 300)'}
+20:58:07 - 来自: test_mouse_control.py:165 - click_mouse        | 函数返回            | GameHelper.LeftClick2                    | 返回值: None
+20:58:10 - 来自: test_mouse_control.py:186 - double_click_mouse | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (500, 300))', 'kwargs': "{'double': True}"}
+20:58:10 - 来自: test_mouse_control.py:186 - double_click_mouse | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'double' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'double'
+
+20:58:14 - 来自: test_mouse_control.py:165 - click_mouse        | 调用函数            | GameHelper.LeftClick2                    | 参数: {'self': '<GameHelper.GameHelper object at 0x0000018C1C56E970>', 'pos': '(500, 300)'}
+20:58:14 - 来自: test_mouse_control.py:165 - click_mouse        | 函数返回            | GameHelper.LeftClick2                    | 返回值: None
+20:58:20 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (500, 300))', 'kwargs': "{'click': False}"}
+20:58:20 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+20:58:22 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (500, 300))', 'kwargs': "{'click': False}"}
+20:58:22 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+20:58:24 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (500, 300))', 'kwargs': "{'click': False}"}
+20:58:24 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+20:58:26 - 来自: test_mouse_control.py:165 - click_mouse        | 调用函数            | GameHelper.LeftClick2                    | 参数: {'self': '<GameHelper.GameHelper object at 0x0000018C1C56E970>', 'pos': '(500, 300)'}
+20:58:26 - 来自: test_mouse_control.py:165 - click_mouse        | 函数返回            | GameHelper.LeftClick2                    | 返回值: None
+20:58:29 - 来自: test_mouse_control.py:186 - double_click_mouse | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (500, 300))', 'kwargs': "{'double': True}"}
+20:58:29 - 来自: test_mouse_control.py:186 - double_click_mouse | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'double' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'double'
+
+20:58:30 - 来自: test_mouse_control.py:186 - double_click_mouse | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (500, 300))', 'kwargs': "{'double': True}"}
+20:58:30 - 来自: test_mouse_control.py:186 - double_click_mouse | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'double' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'double'
+
+20:58:31 - 来自: test_mouse_control.py:186 - double_click_mouse | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (500, 300))', 'kwargs': "{'double': True}"}
+20:58:31 - 来自: test_mouse_control.py:186 - double_click_mouse | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'double' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'double'
+
+21:02:29 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1280, 300))', 'kwargs': "{'click': False}"}
+21:02:29 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:02:30 - 来自: test_mouse_control.py:165 - click_mouse        | 调用函数            | GameHelper.LeftClick2                    | 参数: {'self': '<GameHelper.GameHelper object at 0x0000018C1C56E970>', 'pos': '(1280, 300)'}
+21:02:30 - 来自: test_mouse_control.py:165 - click_mouse        | 函数返回            | GameHelper.LeftClick2                    | 返回值: None
+21:02:47 - 来自: test_mouse_control.py:165 - click_mouse        | 调用函数            | GameHelper.LeftClick2                    | 参数: {'self': '<GameHelper.GameHelper object at 0x0000018C1C56E970>', 'pos': '(1400, 300)'}
+21:02:47 - 来自: test_mouse_control.py:165 - click_mouse        | 函数返回            | GameHelper.LeftClick2                    | 返回值: None
+21:02:48 - 来自: test_mouse_control.py:165 - click_mouse        | 调用函数            | GameHelper.LeftClick2                    | 参数: {'self': '<GameHelper.GameHelper object at 0x0000018C1C56E970>', 'pos': '(1400, 300)'}
+21:02:48 - 来自: test_mouse_control.py:165 - click_mouse        | 函数返回            | GameHelper.LeftClick2                    | 返回值: None
+21:02:52 - 来自: test_mouse_control.py:165 - click_mouse        | 调用函数            | GameHelper.LeftClick2                    | 参数: {'self': '<GameHelper.GameHelper object at 0x0000018C1C56E970>', 'pos': '(1400, 300)'}
+21:02:52 - 来自: test_mouse_control.py:165 - click_mouse        | 函数返回            | GameHelper.LeftClick2                    | 返回值: None
+21:02:55 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'click': False}"}
+21:02:55 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:02:55 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'click': False}"}
+21:02:55 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:02:56 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'click': False}"}
+21:02:56 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:02:56 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'click': False}"}
+21:02:56 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:02:56 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'click': False}"}
+21:02:56 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:02:56 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'click': False}"}
+21:02:56 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:02:56 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'click': False}"}
+21:02:56 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:02:57 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'click': False}"}
+21:02:57 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:02:57 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'click': False}"}
+21:02:57 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:02:57 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'click': False}"}
+21:02:57 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:02:58 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'click': False}"}
+21:02:58 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:02:58 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'click': False}"}
+21:02:58 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:02:58 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'click': False}"}
+21:02:58 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:02:59 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'click': False}"}
+21:02:59 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:02:59 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'click': False}"}
+21:02:59 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:03:00 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'click': False}"}
+21:03:00 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:03:00 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'click': False}"}
+21:03:00 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:03:00 - 来自: test_mouse_control.py:144 - move_mouse         | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'click': False}"}
+21:03:00 - 来自: test_mouse_control.py:144 - move_mouse         | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'click' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'click'
+
+21:03:01 - 来自: test_mouse_control.py:186 - double_click_mouse | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'double': True}"}
+21:03:01 - 来自: test_mouse_control.py:186 - double_click_mouse | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'double' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'double'
+
+21:03:02 - 来自: test_mouse_control.py:186 - double_click_mouse | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'double': True}"}
+21:03:02 - 来自: test_mouse_control.py:186 - double_click_mouse | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'double' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'double'
+
+21:03:03 - 来自: test_mouse_control.py:186 - double_click_mouse | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'double': True}"}
+21:03:03 - 来自: test_mouse_control.py:186 - double_click_mouse | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'double' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'double'
+
+21:03:03 - 来自: test_mouse_control.py:186 - double_click_mouse | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'double': True}"}
+21:03:03 - 来自: test_mouse_control.py:186 - double_click_mouse | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'double' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'double'
+
+21:03:03 - 来自: test_mouse_control.py:186 - double_click_mouse | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'double': True}"}
+21:03:03 - 来自: test_mouse_control.py:186 - double_click_mouse | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'double' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'double'
+
+21:03:04 - 来自: test_mouse_control.py:186 - double_click_mouse | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'double': True}"}
+21:03:04 - 来自: test_mouse_control.py:186 - double_click_mouse | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'double' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'double'
+
+21:03:04 - 来自: test_mouse_control.py:186 - double_click_mouse | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'double': True}"}
+21:03:04 - 来自: test_mouse_control.py:186 - double_click_mouse | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'double' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'double'
+
+21:03:04 - 来自: test_mouse_control.py:186 - double_click_mouse | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'double': True}"}
+21:03:04 - 来自: test_mouse_control.py:186 - double_click_mouse | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'double' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'double'
+
+21:03:04 - 来自: test_mouse_control.py:186 - double_click_mouse | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'double': True}"}
+21:03:04 - 来自: test_mouse_control.py:186 - double_click_mouse | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'double' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'double'
+
+21:03:04 - 来自: test_mouse_control.py:186 - double_click_mouse | 调用函数            | GameHelper.LeftClick2                    | 参数: {'args': '(<GameHelper.GameHelper object at 0x0000018C1C56E970>, (1400, 300))', 'kwargs': "{'double': True}"}
+21:03:04 - 来自: test_mouse_control.py:186 - double_click_mouse | 函数异常            | GameHelper.LeftClick2                    | 异常类型: TypeError | 异常信息: LeftClick2() got an unexpected keyword argument 'double' | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: LeftClick2() got an unexpected keyword argument 'double'
+

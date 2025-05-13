@@ -1,0 +1,7 @@
+2025-04-08 16:46:21,923 - log_utils.py:56 - wrapper - 调用函数: __main__.__init__ | 来自: main.py:1234 - <module> | 参数: {'self': <__main__.MaYun object at 0x000001897F85E1F0>}
+2025-04-08 16:46:22,135 - log_utils.py:56 - wrapper - 调用函数: __main__.__init__ | 来自: main.py:1048 - __init__ | 参数: {'self': <__main__.Worker object at 0x000001897FB4C790>}
+2025-04-08 16:46:22,185 - log_utils.py:65 - wrapper - 函数返回: __main__.__init__ | 返回值: None
+2025-04-08 16:46:22,186 - log_utils.py:56 - wrapper - 调用函数: __main__.init_info | 来自: main.py:1049 - __init__ | 参数: {'self': <__main__.MaYun object at 0x000001897F85E1F0>}
+2025-04-08 16:46:22,239 - log_utils.py:65 - wrapper - 函数返回: __main__.init_info | 返回值: None
+2025-04-08 16:46:22,239 - log_utils.py:65 - wrapper - 函数返回: __main__.__init__ | 返回值: None
+2025-04-08 16:46:25,724 - log_utils.py:56 - wrapper - 调用函数: __main__.hand_game | 来自: main.py:1236 - <module> | 参数: {'self': <__main__.MaYun object at 0x000001897F85E1F0>, 'result': False}

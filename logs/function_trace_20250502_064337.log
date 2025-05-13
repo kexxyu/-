@@ -1,0 +1,66 @@
+06:43:41 - 来自: main.py:43 - <module>                          | 调用函数            | GameHelper.__init__                      | 参数: {'self': '<GameHelper.GameHelper object at 0x000002080E5B5250>'}
+06:43:41 - 来自: GameHelper.py:146 - __init__                   | 调用函数            | GameHelper.read_json                     | 参数: {}
+06:43:41 - 来自: GameHelper.py:146 - __init__                   | 函数返回            | GameHelper.read_json                     | 返回值: {'window': 1, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}
+06:43:41 - 来自: GameHelper.py:163 - __init__                   | 调用函数            | GameHelper.write_json                    | 参数: {'data': "{'window': 0, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}"}
+06:43:41 - 来自: GameHelper.py:163 - __init__                   | 函数返回            | GameHelper.write_json                    | 返回值: None
+06:43:41 - 来自: GameHelper.py:166 - __init__                   | 调用函数            | GameHelper.GetZoomRate                   | 参数: {'self': '<GameHelper.GameHelper object at 0x000002080E5B5250>'}
+06:43:41 - 来自: GameHelper.py:166 - __init__                   | 函数返回            | GameHelper.GetZoomRate                   | 返回值: None
+06:43:41 - 来自: main.py:43 - <module>                          | 函数返回            | GameHelper.__init__                      | 返回值: None
+06:43:41 - 来自: main.py:1720 - <module>                        | 调用函数            | __main__.__init__                        | 参数: {'self': '<__main__.MaYun object at 0x000002083A8A4790>'}
+06:43:42 - 来自: main.py:1534 - __init__                        | 调用函数            | __main__.__init__                        | 参数: {'self': '<__main__.Worker object at 0x000002083C380D30>'}
+06:43:42 - 来自: main.py:1534 - __init__                        | 函数返回            | __main__.__init__                        | 返回值: None
+06:43:42 - 来自: main.py:1535 - __init__                        | 调用函数            | __main__.init_info                       | 参数: {'self': '<__main__.MaYun object at 0x000002083A8A4790>'}
+06:43:42 - 来自: main.py:1616 - init_info                       | 调用函数            | GameHelper.__init__                      | 参数: {'self': '<GameHelper.GameHelper object at 0x000002083A728BE0>'}
+06:43:42 - 来自: GameHelper.py:146 - __init__                   | 调用函数            | GameHelper.read_json                     | 参数: {}
+06:43:42 - 来自: GameHelper.py:146 - __init__                   | 函数返回            | GameHelper.read_json                     | 返回值: {'window': 0, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}
+06:43:42 - 来自: GameHelper.py:163 - __init__                   | 调用函数            | GameHelper.write_json                    | 参数: {'data': "{'window': 0, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}"}
+06:43:42 - 来自: GameHelper.py:163 - __init__                   | 函数返回            | GameHelper.write_json                    | 返回值: None
+06:43:42 - 来自: GameHelper.py:166 - __init__                   | 调用函数            | GameHelper.GetZoomRate                   | 参数: {'self': '<GameHelper.GameHelper object at 0x000002083A728BE0>'}
+06:43:42 - 来自: GameHelper.py:166 - __init__                   | 函数返回            | GameHelper.GetZoomRate                   | 返回值: None
+06:43:42 - 来自: main.py:1616 - init_info                       | 函数返回            | GameHelper.__init__                      | 返回值: None
+06:43:42 - 来自: main.py:1617 - init_info                       | 调用函数            | GameHelper.read_json                     | 参数: {}
+06:43:42 - 来自: main.py:1617 - init_info                       | 函数返回            | GameHelper.read_json                     | 返回值: {'window': 0, 'bid1': '0.6', 'bid2': '0.6', 'bid3': '0.6', 'bid4': '0.6'}
+06:43:42 - 来自: main.py:1535 - __init__                        | 函数返回            | __main__.init_info                       | 返回值: None
+06:43:42 - 来自: main.py:1720 - <module>                        | 函数返回            | __main__.__init__                        | 返回值: None
+06:43:48 - 来自: main.py:1722 - <module>                        | 调用函数            | __main__.init_threshold                  | 参数: {'args': '(<__main__.MaYun object at 0x000002083A8A4790>, False)', 'kwargs': '{}'}
+06:43:48 - 来自: main.py:1722 - <module>                        | 函数异常            | __main__.init_threshold                  | 异常类型: TypeError | 异常信息: init_threshold() takes 1 positional argument but 2 were given | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: init_threshold() takes 1 positional argument but 2 were given
+
+06:43:51 - 来自: main.py:1722 - <module>                        | 调用函数            | __main__.init_threshold                  | 参数: {'args': '(<__main__.MaYun object at 0x000002083A8A4790>, False)', 'kwargs': '{}'}
+06:43:51 - 来自: main.py:1722 - <module>                        | 函数异常            | __main__.init_threshold                  | 异常类型: TypeError | 异常信息: init_threshold() takes 1 positional argument but 2 were given | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: init_threshold() takes 1 positional argument but 2 were given
+
+06:44:03 - 来自: main.py:1722 - <module>                        | 调用函数            | __main__.init_threshold                  | 参数: {'args': '(<__main__.MaYun object at 0x000002083A8A4790>, False)', 'kwargs': '{}'}
+06:44:03 - 来自: main.py:1722 - <module>                        | 函数异常            | __main__.init_threshold                  | 异常类型: TypeError | 异常信息: init_threshold() takes 1 positional argument but 2 were given | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: init_threshold() takes 1 positional argument but 2 were given
+
+06:44:03 - 来自: main.py:1722 - <module>                        | 调用函数            | __main__.init_threshold                  | 参数: {'args': '(<__main__.MaYun object at 0x000002083A8A4790>, False)', 'kwargs': '{}'}
+06:44:03 - 来自: main.py:1722 - <module>                        | 函数异常            | __main__.init_threshold                  | 异常类型: TypeError | 异常信息: init_threshold() takes 1 positional argument but 2 were given | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: init_threshold() takes 1 positional argument but 2 were given
+
+06:44:04 - 来自: main.py:1722 - <module>                        | 调用函数            | __main__.init_threshold                  | 参数: {'args': '(<__main__.MaYun object at 0x000002083A8A4790>, False)', 'kwargs': '{}'}
+06:44:04 - 来自: main.py:1722 - <module>                        | 函数异常            | __main__.init_threshold                  | 异常类型: TypeError | 异常信息: init_threshold() takes 1 positional argument but 2 were given | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: init_threshold() takes 1 positional argument but 2 were given
+
+06:44:04 - 来自: main.py:1722 - <module>                        | 调用函数            | __main__.init_threshold                  | 参数: {'args': '(<__main__.MaYun object at 0x000002083A8A4790>, False)', 'kwargs': '{}'}
+06:44:04 - 来自: main.py:1722 - <module>                        | 函数异常            | __main__.init_threshold                  | 异常类型: TypeError | 异常信息: init_threshold() takes 1 positional argument but 2 were given | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: init_threshold() takes 1 positional argument but 2 were given
+
+06:44:04 - 来自: main.py:1722 - <module>                        | 调用函数            | __main__.init_threshold                  | 参数: {'args': '(<__main__.MaYun object at 0x000002083A8A4790>, False)', 'kwargs': '{}'}
+06:44:04 - 来自: main.py:1722 - <module>                        | 函数异常            | __main__.init_threshold                  | 异常类型: TypeError | 异常信息: init_threshold() takes 1 positional argument but 2 were given | 堆栈跟踪: Traceback (most recent call last):
+  File "C:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 102, in wrapper
+    result = func(*args, **kwargs)
+TypeError: init_threshold() takes 1 positional argument but 2 were given
+
