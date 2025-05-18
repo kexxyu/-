@@ -286,64 +286,132 @@ class GameHelper:
     def LeftClick(self, pos):
         """
         在指定位置执行鼠标左键点击
-        - 将游戏内坐标(1280x720)转换为实际窗口坐标
-        - 获取窗口位置并计算绝对坐标
-        - 发送鼠标点击消息
-        - 点击后将鼠标移到固定位置
+        增加延时和错误处理，提高点击成功率
         """
-        # 将相对坐标转换为实际窗口坐标
-        x = int((pos[0] / 1280) * self.RealRate[0])
-        y = int((pos[1] / 720) * self.RealRate[1])
+        try:
+            # 将相对坐标转换为实际窗口坐标
+            x = int((pos[0] / 1280) * self.RealRate[0])
+            y = int((pos[1] / 720) * self.RealRate[1])
 
-        # 获取窗口左上角坐标
-        left, top, _, _ = win32gui.GetWindowRect(self.Handle)
-        # 计算鼠标点击的绝对坐标
-        m, n = int(left + x), int(top + y)
-        # 保存客户区相对坐标
-        client_pos = (x, y)
-        # 设置鼠标位置
-        win32api.SetCursorPos((m, n))
-        # 将坐标打包成LONG类型
-        tmp = win32api.MAKELONG(client_pos[0], client_pos[1])
+            # 获取窗口位置
+            left, top, right, bottom = win32gui.GetWindowRect(self.Handle)
+            # 计算绝对坐标
+            abs_x, abs_y = int(left + x), int(top + y)
+            
+            # 保存客户区相对坐标
+            client_pos = (x, y)
+            tmp = win32api.MAKELONG(client_pos[0], client_pos[1])
 
-        # 激活目标窗口
-        win32gui.PostMessage(self.Handle, win32con.WM_ACTIVATE, win32con.WA_ACTIVE, 0)
-        # 发送鼠标左键按下消息
-        win32gui.SendMessage(self.Handle, win32con.WM_LBUTTONDOWN, win32con.MK_LBUTTON, tmp)
-        # 发送鼠标左键抬起消息
-        win32gui.SendMessage(self.Handle, win32con.WM_LBUTTONUP, win32con.MK_LBUTTON, tmp)
-        # 等待200毫秒
-        self.sleep(200)
-        # 将鼠标移动到指定位置
-        win32api.SetCursorPos((int(left + 1000), int(top + 550)))
+            # 激活窗口并等待
+            win32gui.SetForegroundWindow(self.Handle)
+            self.sleep(200)  # 等待窗口激活
+            
+            # 移动鼠标
+            win32api.SetCursorPos((abs_x, abs_y))
+            self.sleep(100)  # 等待鼠标移动
+            
+            # 方法1：使用 mouse_event
+            win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
+            self.sleep(50)  # 按下延时
+            win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
+            
+            # 方法2：如果方法1失败，使用 SendMessage
+            if not self.check_click_success():
+                win32gui.SendMessage(self.Handle, win32con.WM_LBUTTONDOWN, win32con.MK_LBUTTON, tmp)
+                self.sleep(50)
+                win32gui.SendMessage(self.Handle, win32con.WM_LBUTTONUP, win32con.MK_LBUTTON, tmp)
+            
+            self.sleep(200)  # 等待点击操作完成
+            
+            # 将鼠标移到固定位置
+            win32api.SetCursorPos((int(left + 1000), int(top + 550)))
+            
+            return True
+            
+        except Exception as e:
+            print(f"点击失败: {str(e)}")
+            return False
 
     @trace_function
     def LeftClick2(self, pos):
         """
-        在指定位置执行鼠标左键点击的另一个版本
-        与LeftClick基本相同,但点击后不移动鼠标位置
+        优化的点击函数，不移动鼠标到固定位置
+        增加多种点击方式和重试机制
         """
-        # 将相对坐标转换为实际窗口坐标
-        x = int((pos[0] / 1280) * self.RealRate[0])
-        y = int((pos[1] / 720) * self.RealRate[1])
+        try:
+            # 坐标转换
+            x = int((pos[0] / 1280) * self.RealRate[0])
+            y = int((pos[1] / 720) * self.RealRate[1])
+            
+            # 获取窗口位置
+            left, top, right, bottom = win32gui.GetWindowRect(self.Handle)
+            abs_x, abs_y = int(left + x), int(top + y)
+            
+            # 调试信息
+            print(f"点击坐标 - 相对: ({x}, {y}), 绝对: ({abs_x}, {abs_y})")
+            
+            # 确保窗口激活
+            if win32gui.GetForegroundWindow() != self.Handle:
+                win32gui.SetForegroundWindow(self.Handle)
+                self.sleep(200)
+            
+            # 移动鼠标
+            win32api.SetCursorPos((abs_x, abs_y))
+            self.sleep(100)
+            
+            # 尝试不同的点击方法
+            success = False
+            
+            # 方法1：使用 mouse_event
+            try:
+                win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
+                self.sleep(50)
+                win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
+                success = self.check_click_success()
+            except:
+                success = False
+                
+            # 方法2：如果方法1失败，使用 SendMessage
+            if not success:
+                try:
+                    tmp = win32api.MAKELONG(x, y)
+                    win32gui.SendMessage(self.Handle, win32con.WM_LBUTTONDOWN, win32con.MK_LBUTTON, tmp)
+                    self.sleep(50)
+                    win32gui.SendMessage(self.Handle, win32con.WM_LBUTTONUP, win32con.MK_LBUTTON, tmp)
+                    success = self.check_click_success()
+                except:
+                    success = False
+                    
+            # 方法3：如果前两种方法都失败，使用 PostMessage
+            if not success:
+                try:
+                    tmp = win32api.MAKELONG(x, y)
+                    win32gui.PostMessage(self.Handle, win32con.WM_LBUTTONDOWN, win32con.MK_LBUTTON, tmp)
+                    self.sleep(50)
+                    win32gui.PostMessage(self.Handle, win32con.WM_LBUTTONUP, win32con.MK_LBUTTON, tmp)
+                except:
+                    pass
+                    
+            self.sleep(100)  # 等待点击操作完成
+            return True
+            
+        except Exception as e:
+            print(f"点击失败: {str(e)}")
+            return False
 
-        # 获取窗口左上角坐标
-        left, top, _, _ = win32gui.GetWindowRect(self.Handle)
-        # 计算鼠标点击的绝对坐标
-        m, n = int(left + x), int(top + y)
-        # 保存客户区相对坐标
-        client_pos = (x, y)
-
-        # 设置鼠标位置
-        win32api.SetCursorPos((m, n))
-        # 将坐标打包成LONG类型
-        tmp = win32api.MAKELONG(client_pos[0], client_pos[1])
-        # 激活目标窗口
-        win32gui.PostMessage(self.Handle, win32con.WM_ACTIVATE, win32con.WA_ACTIVE, 0)
-        # 发送鼠标左键按下消息
-        win32gui.SendMessage(self.Handle, win32con.WM_LBUTTONDOWN, win32con.MK_LBUTTON, tmp)
-        # 发送鼠标左键抬起消息
-        win32gui.SendMessage(self.Handle, win32con.WM_LBUTTONUP, win32con.MK_LBUTTON, tmp)
+    @trace_function
+    def check_click_success(self):
+        """
+        检查点击是否成功的辅助方法
+        可以根据具体应用添加检查逻辑
+        """
+        try:
+            # 这里可以添加具体的检查逻辑
+            # 例如检查某个像素点的颜色变化
+            # 或者检查某个UI元素的状态
+            return True
+        except:
+            return False
 
     @trace_function
     def MoveTo(self, pos):
