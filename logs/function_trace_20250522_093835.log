@@ -1,0 +1,6 @@
+09:38:40 - 来自: main.py:1720 - <module>                        | 调用函数            | __main__.__init__                        | 参数: {'self': '<__main__.MaYun object at 0x000001ABBBDABD30>'}
+09:38:41 -     来自: main.py:1534 - __init__                        | 调用函数            | __main__.__init__                        | 参数: {'self': '<__main__.Worker object at 0x000001ABBD793310>'}
+09:38:41 -     来自: main.py:1534 - __init__                        | 函数返回            | __main__.__init__                        | 返回值: None
+09:38:41 -     来自: main.py:1535 - __init__                        | 调用函数            | __main__.init_info                       | 参数: {'self': '<__main__.MaYun object at 0x000001ABBBDABD30>'}
+09:38:41 -     来自: main.py:1535 - __init__                        | 函数返回            | __main__.init_info                       | 返回值: None
+09:38:41 - 来自: main.py:1720 - <module>                        | 函数返回            | __main__.__init__                        | 返回值: None

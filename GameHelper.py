@@ -21,11 +21,9 @@ import time
 
 from PyQt5 import QtWidgets
 from PyQt5.QtCore import QTime, QEventLoop
-from log_utils import trace_function
 
 Pics = {}
 
-@trace_function
 def read_json():
     with open('weights/data.json', 'r') as f:
         content = f.read()
@@ -33,13 +31,11 @@ def read_json():
         f.close()
     return data
 
-@trace_function
 def write_json(data):
     with open('weights/data.json', 'w') as f:
         json.dump(data, f)
         f.close()
 
-@trace_function
 def subtract_strings(str1, str2):
     for char1, char2 in zip(str1, str2):
         # 如果字符2在字符1中出现，则从字符1中删除该字符
@@ -48,7 +44,6 @@ def subtract_strings(str1, str2):
     result = str1
     return result
 
-@trace_function
 def DrawRectWithText(image, rect, text):
     img = cv2.cvtColor(np.asarray(image), cv2.COLOR_RGB2BGR)
     x, y, w, h = rect
@@ -56,19 +51,16 @@ def DrawRectWithText(image, rect, text):
     img2 = cv2.putText(img2, text, (x, y + 20), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 0, 255), 2)
     return Image.fromarray(cv2.cvtColor(img2, cv2.COLOR_BGR2RGB))
 
-@trace_function
 def CompareCard(card):
     order = {"3": 0, "4": 1, "5": 2, "6": 3, "7": 4, "8": 5, "9": 6, "T": 7, "J": 8, "Q": 9, "K": 10, "A": 11, "2": 12,
              "X": 13, "D": 14}
     return order[card]
 
-@trace_function
 def CompareCardInfo(card):
     order = {"3": 0, "4": 1, "5": 2, "6": 3, "7": 4, "8": 5, "9": 6, "T": 7, "J": 8, "Q": 9, "K": 10, "A": 11, "2": 12,
              "X": 13, "D": 14}
     return order[card[0]]
 
-@trace_function
 def CompareCards(cards1, cards2):
     if len(cards1) != len(cards2):
         return False
@@ -79,7 +71,6 @@ def CompareCards(cards1, cards2):
             return False
     return True
 
-@trace_function
 def GetListDifference(l1, l2):
     temp1 = []
     temp1.extend(l1)
@@ -93,7 +84,6 @@ def GetListDifference(l1, l2):
             temp2.remove(i)
     return temp1, temp2
 
-@trace_function
 def FindImage(fromImage, template, threshold=0.8):
     w, h, _ = template.shape
     fromImage = cv2.cvtColor(np.asarray(fromImage), cv2.COLOR_RGB2BGR)
@@ -104,13 +94,6 @@ def FindImage(fromImage, template, threshold=0.8):
         points.append(pt)
     return points
 
-@trace_function
-# 在图像中定位模板图像的位置
-# 参数:
-# image: 要搜索的大图像
-# template: 要查找的模板图像
-# region: 搜索区域,格式为(x,y,w,h),默认为None表示搜索整个图像
-# confidence: 匹配置信度阈值,默认0.8
 def LocateOnImage(image, template, region=None, confidence=0.8):
     # 如果指定了搜索区域,则裁剪图像
     if region is not None:
@@ -127,13 +110,6 @@ def LocateOnImage(image, template, region=None, confidence=0.8):
     else:
         return None
 
-@trace_function
-# 在图像中定位所有匹配模板的位置
-# 参数:
-# image: 要搜索的大图像
-# template: 要查找的模板图像
-# region: 搜索区域,格式为(x,y,w,h),默认为None表示搜索整个图像
-# confidence: 匹配置信度阈值,默认0.8
 def LocateAllOnImage(image, template, region=None, confidence=0.8):
     # 如果指定了搜索区域,则裁剪图像
     if region is not None:
@@ -154,14 +130,12 @@ def LocateAllOnImage(image, template, region=None, confidence=0.8):
     # 返回所有匹配位置
     return points
 
-@trace_function
 def play_sound(sound_file):
     pygame.mixer.init()
     pygame.mixer.music.load(sound_file)
     pygame.mixer.music.play()
 
 class GameHelper:
-    @trace_function
     def __init__(self):
         self.ScreenZoomRate = None
         self.counter = QTime()
@@ -196,13 +170,11 @@ class GameHelper:
                 self.Pics.update({info[0]: tmpImage})
                 self.PicsCV.update({info[0]: imgCv})
 
-    @trace_function
     def sleep(self, ms):
         self.counter.restart()
         while self.counter.elapsed() < ms:
             QtWidgets.QApplication.processEvents(QEventLoop.AllEvents, 50)
 
-    @trace_function
     def Screenshot(self, region=None):  # -> (im, (left, top))
         try_count = 3
         success = False
@@ -250,11 +222,9 @@ class GameHelper:
                 self.sleep(200)
         return None
 
-    @trace_function
     def GetZoomRate(self):
         self.ScreenZoomRate = ctypes.windll.shcore.GetScaleFactorForDevice(0) / 100
 
-    @trace_function
     def LocateOnScreen(self, templateName, region, confidence=0.8, img=None):
         if img is not None:
             image = img
@@ -263,8 +233,6 @@ class GameHelper:
         imgcv = cv2.cvtColor(np.asarray(image), cv2.COLOR_RGB2BGR)
         return LocateOnImage(imgcv, self.PicsCV[templateName], region=region, confidence=confidence)
 
-    @trace_function
-    # 在图像上点击指定模板位置的方法
     def ClickOnImage(self, templateName, region=None, confidence=0.8, img=None):
         # 如果提供了图像参数,使用该图像
         if img is not None:
@@ -282,7 +250,6 @@ class GameHelper:
             self.LeftClick(result)
             # print(result)
 
-    @trace_function
     def LeftClick(self, pos):
         """
         在指定位置执行鼠标左键点击
@@ -332,7 +299,6 @@ class GameHelper:
             print(f"点击失败: {str(e)}")
             return False
 
-    @trace_function
     def LeftClick2(self, pos):
         """
         优化的点击函数，不移动鼠标到固定位置
@@ -399,7 +365,6 @@ class GameHelper:
             print(f"点击失败: {str(e)}")
             return False
 
-    @trace_function
     def check_click_success(self):
         """
         检查点击是否成功的辅助方法
@@ -413,7 +378,6 @@ class GameHelper:
         except:
             return False
 
-    @trace_function
     def MoveTo(self, pos):
         """
         将鼠标移动到指定位置
@@ -426,7 +390,6 @@ class GameHelper:
         x, y = int(left + x), int(top + y)
         pyautogui.moveTo(x, y)
 
-    @trace_function
     @staticmethod
     def MouseScroll(amount):
         """

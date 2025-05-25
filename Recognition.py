@@ -8,7 +8,7 @@ import os
 # 设置最小置信度阈值
 min_confidence = 0.3
 # 设置非极大值抑制阈值,数值越小精度越高
-nm_threshold = 0.1  # 数值越小精度越高
+nm_threshold = 0.1  
 # 设置权重文件路径
 weightsPath = os.path.sep.join(['weights', "cards.weights"])
 # 设置配置文件路径

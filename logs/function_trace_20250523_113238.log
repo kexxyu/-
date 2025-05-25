@@ -1,0 +1,1420 @@
+11:32:43 - 来自: main.py:1741 - <module>                        | 调用函数            | __main__.__init__                        | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>'}
+11:32:43 -     来自: main.py:1555 - __init__                        | 调用函数            | __main__.__init__                        | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:32:44 -     来自: main.py:1555 - __init__                        | 函数返回            | __main__.__init__                        | 返回值: None
+11:32:44 -     来自: main.py:1556 - __init__                        | 调用函数            | __main__.init_info                       | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>'}
+11:32:44 -     来自: main.py:1556 - __init__                        | 函数返回            | __main__.init_info                       | 返回值: None
+11:32:44 - 来自: main.py:1741 - <module>                        | 函数返回            | __main__.__init__                        | 返回值: None
+11:33:07 - 来自: main.py:1743 - <module>                        | 调用函数            | __main__.auto_game                       | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>', 'result': 'False'}
+11:33:07 - 来自: 未知调用者                                          | 调用函数            | __main__.run                             | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:07 -     来自: main.py:255 - run                              | 调用函数            | __main__.init_datas                      | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:07 - 来自: main.py:1743 - <module>                        | 函数返回            | __main__.auto_game                       | 返回值: None
+11:33:07 - 来自: main.py:1743 - <module>                        | 调用函数            | __main__.init_interface                  | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>', 'result': '1'}
+11:33:07 -     来自: main.py:1657 - init_interface                  | 调用函数            | __main__.recorder2zero                   | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>'}
+11:33:07 -     来自: main.py:1657 - init_interface                  | 函数返回            | __main__.recorder2zero                   | 返回值: None
+11:33:07 - 来自: main.py:1743 - <module>                        | 函数返回            | __main__.init_interface                  | 返回值: None
+11:33:07 - 来自: main.py:1743 - <module>                        | 调用函数            | __main__.write_threshold                 | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>', 'result': '1'}
+11:33:07 - 来自: main.py:1743 - <module>                        | 函数返回            | __main__.write_threshold                 | 返回值: None
+11:33:07 -     来自: main.py:255 - run                              | 函数异常            | __main__.init_datas                      | 异常类型: KeyError | 异常信息: 'state' | 堆栈跟踪: Traceback (most recent call last):
+  File "c:\Users\User\Desktop\douzero项目汇总\测试用\5.8源码cursor版\log_utils.py", line 128, in wrapper
+    result = func(*args, **kwargs)
+  File "c:/Users/User/Desktop/douzero项目汇总/测试用/5.8源码cursor版/main.py", line 304, in init_datas
+    self.statement = data["state"]
+KeyError: 'state'
+
+11:33:07 -     来自: main.py:281 - run                              | 调用函数            | __main__.before_start                    | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:07 -         来自: main.py:703 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:07 -             来自: main.py:383 - find_my_cards                    | 调用函数            | __main__.cards_info                      | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>', 'img': '[[[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n ...\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]]', 'pos': '(54, 481, 1121, 82)', 'mark': 'm', 'confidence': '0.8'}
+11:33:07 -             来自: main.py:383 - find_my_cards                    | 函数返回            | __main__.cards_info                      | 返回值: 
+11:33:07 -         来自: main.py:703 - before_start                     | 函数返回            | __main__.find_my_cards                   | 返回值: 
+11:33:08 -         来自: main.py:718 - before_start                     | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:08 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:08 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:08 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:08 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:08 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:08 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: (249, 285)
+11:33:09 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:09 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:09 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:09 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:09 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:09 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:09 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:09 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:09 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:10 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:10 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:10 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:10 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:10 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:10 -         来自: main.py:718 - before_start                     | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:10 -         来自: main.py:703 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:10 -             来自: main.py:383 - find_my_cards                    | 调用函数            | __main__.cards_info                      | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>', 'img': '[[[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n ...\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]]', 'pos': '(54, 481, 1121, 82)', 'mark': 'm', 'confidence': '0.8'}
+11:33:10 -             来自: main.py:383 - find_my_cards                    | 函数返回            | __main__.cards_info                      | 返回值: 
+11:33:10 -         来自: main.py:703 - before_start                     | 函数返回            | __main__.find_my_cards                   | 返回值: 
+11:33:10 -         来自: main.py:718 - before_start                     | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:10 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:10 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:10 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:10 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:10 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:10 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:10 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:11 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:11 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:11 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:11 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:11 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:11 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:11 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:11 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:11 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:11 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:11 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:11 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:11 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:11 -         来自: main.py:718 - before_start                     | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:11 -         来自: main.py:703 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:11 -             来自: main.py:383 - find_my_cards                    | 调用函数            | __main__.cards_info                      | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>', 'img': '[[[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n ...\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]]', 'pos': '(54, 481, 1121, 82)', 'mark': 'm', 'confidence': '0.8'}
+11:33:11 -             来自: main.py:383 - find_my_cards                    | 函数返回            | __main__.cards_info                      | 返回值: 
+11:33:11 -         来自: main.py:703 - before_start                     | 函数返回            | __main__.find_my_cards                   | 返回值: 
+11:33:11 -         来自: main.py:718 - before_start                     | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:11 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:12 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:12 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:12 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:12 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:12 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:12 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:12 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:12 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:12 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:12 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:12 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:12 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:12 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:12 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:12 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:12 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:12 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:12 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:12 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:12 -         来自: main.py:718 - before_start                     | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:12 -         来自: main.py:703 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:12 -             来自: main.py:383 - find_my_cards                    | 调用函数            | __main__.cards_info                      | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>', 'img': '[[[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n ...\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]]', 'pos': '(54, 481, 1121, 82)', 'mark': 'm', 'confidence': '0.8'}
+11:33:12 -             来自: main.py:383 - find_my_cards                    | 函数返回            | __main__.cards_info                      | 返回值: 
+11:33:12 -         来自: main.py:703 - before_start                     | 函数返回            | __main__.find_my_cards                   | 返回值: 
+11:33:12 -         来自: main.py:718 - before_start                     | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:13 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:13 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:13 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:13 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:13 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:13 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:13 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:13 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:13 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:13 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:13 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:13 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:13 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:13 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:13 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:13 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:13 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:13 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:13 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:13 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:13 -         来自: main.py:718 - before_start                     | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:13 -         来自: main.py:703 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:13 -             来自: main.py:383 - find_my_cards                    | 调用函数            | __main__.cards_info                      | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>', 'img': '[[[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n ...\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]]', 'pos': '(54, 481, 1121, 82)', 'mark': 'm', 'confidence': '0.8'}
+11:33:13 -             来自: main.py:383 - find_my_cards                    | 函数返回            | __main__.cards_info                      | 返回值: 
+11:33:13 -         来自: main.py:703 - before_start                     | 函数返回            | __main__.find_my_cards                   | 返回值: 
+11:33:14 -         来自: main.py:718 - before_start                     | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:14 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:14 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:14 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:14 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:14 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:14 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:14 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:14 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:14 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:14 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:14 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:14 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:14 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:14 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:14 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:14 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:14 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:14 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:14 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:14 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:14 -         来自: main.py:718 - before_start                     | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:14 -         来自: main.py:703 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:14 -             来自: main.py:383 - find_my_cards                    | 调用函数            | __main__.cards_info                      | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>', 'img': '[[[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n ...\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]]', 'pos': '(54, 481, 1121, 82)', 'mark': 'm', 'confidence': '0.8'}
+11:33:14 -             来自: main.py:383 - find_my_cards                    | 函数返回            | __main__.cards_info                      | 返回值: 
+11:33:14 -         来自: main.py:703 - before_start                     | 函数返回            | __main__.find_my_cards                   | 返回值: 
+11:33:15 -         来自: main.py:718 - before_start                     | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:15 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:15 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:15 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:15 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:15 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:15 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:15 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:15 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:15 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:15 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:15 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:15 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:15 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:15 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:15 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:15 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:15 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:15 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:15 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:15 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:15 -         来自: main.py:718 - before_start                     | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:15 -         来自: main.py:703 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:15 -             来自: main.py:383 - find_my_cards                    | 调用函数            | __main__.cards_info                      | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>', 'img': '[[[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n ...\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]]', 'pos': '(54, 481, 1121, 82)', 'mark': 'm', 'confidence': '0.8'}
+11:33:15 -             来自: main.py:383 - find_my_cards                    | 函数返回            | __main__.cards_info                      | 返回值: 
+11:33:15 -         来自: main.py:703 - before_start                     | 函数返回            | __main__.find_my_cards                   | 返回值: 
+11:33:16 -         来自: main.py:718 - before_start                     | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:16 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:16 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:16 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:16 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:16 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:16 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:16 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:16 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:16 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:16 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:16 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:16 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:16 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:16 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:16 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:16 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:16 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:16 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:16 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:16 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:16 -         来自: main.py:718 - before_start                     | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:16 -         来自: main.py:703 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:16 -             来自: main.py:383 - find_my_cards                    | 调用函数            | __main__.cards_info                      | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>', 'img': '[[[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n ...\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]]', 'pos': '(54, 481, 1121, 82)', 'mark': 'm', 'confidence': '0.8'}
+11:33:16 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(335, 28, 1121, 82), (335, 29, 1121, 82), (336, 29, 1121, 82), (386, 29, 1121, 82), (334, 30, 1121, 82), (335, 30, 1121, 82), (336, 30, 1121, 82), (385, 30, 1121, 82), (386, 30, 1121, 82)]', 'distance': '25'}
+11:33:16 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(335, 28, 1121, 82), (386, 29, 1121, 82)])
+11:33:16 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(486, 29, 1121, 82), (487, 29, 1121, 82), (486, 30, 1121, 82), (487, 30, 1121, 82), (486, 31, 1121, 82), (487, 31, 1121, 82), (488, 31, 1121, 82), (486, 32, 1121, 82), (487, 32, 1121, 82), (488, 32, 1121, 82), (487, 33, 1121, 82)]', 'distance': '25'}
+11:33:16 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (1, [(486, 29, 1121, 82)])
+11:33:16 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(436, 30, 1121, 82), (435, 31, 1121, 82), (436, 31, 1121, 82), (436, 32, 1121, 82)]', 'distance': '25'}
+11:33:16 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (1, [(436, 30, 1121, 82)])
+11:33:16 -             来自: main.py:383 - find_my_cards                    | 函数返回            | __main__.cards_info                      | 返回值: KKQ4
+11:33:16 -         来自: main.py:703 - before_start                     | 函数返回            | __main__.find_my_cards                   | 返回值: KKQ4
+11:33:17 -         来自: main.py:718 - before_start                     | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:17 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:17 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:17 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:17 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:17 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:17 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:17 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:17 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:17 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:17 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:17 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:17 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:17 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:17 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:17 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:17 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:17 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:17 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:17 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:17 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:17 -         来自: main.py:718 - before_start                     | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:17 -         来自: main.py:703 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:17 -             来自: main.py:383 - find_my_cards                    | 调用函数            | __main__.cards_info                      | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>', 'img': '[[[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n ...\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]]', 'pos': '(54, 481, 1121, 82)', 'mark': 'm', 'confidence': '0.8'}
+11:33:17 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(87, 30, 1121, 82), (88, 30, 1121, 82), (89, 30, 1121, 82), (87, 31, 1121, 82), (88, 31, 1121, 82), (89, 31, 1121, 82), (141, 31, 1121, 82), (142, 31, 1121, 82), (87, 32, 1121, 82), (88, 32, 1121, 82), (89, 32, 1121, 82), (141, 32, 1121, 82)]', 'distance': '25'}
+11:33:17 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(87, 30, 1121, 82), (141, 31, 1121, 82)])
+11:33:17 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(247, 28, 1121, 82), (194, 29, 1121, 82), (246, 29, 1121, 82), (247, 29, 1121, 82), (248, 29, 1121, 82), (194, 30, 1121, 82), (246, 30, 1121, 82), (247, 30, 1121, 82), (248, 30, 1121, 82)]', 'distance': '25'}
+11:33:17 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(247, 28, 1121, 82), (194, 29, 1121, 82)])
+11:33:17 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(300, 29, 1121, 82), (299, 30, 1121, 82), (300, 30, 1121, 82), (301, 30, 1121, 82), (352, 30, 1121, 82), (299, 31, 1121, 82), (300, 31, 1121, 82), (301, 31, 1121, 82), (352, 31, 1121, 82), (353, 31, 1121, 82), (299, 32, 1121, 82), (300, 32, 1121, 82), (301, 32, 1121, 82), (352, 32, 1121, 82), (300, 33, 1121, 82)]', 'distance': '25'}
+11:33:17 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(300, 29, 1121, 82), (352, 30, 1121, 82)])
+11:33:17 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(458, 28, 1121, 82), (459, 28, 1121, 82), (458, 29, 1121, 82), (459, 29, 1121, 82), (405, 30, 1121, 82), (458, 30, 1121, 82), (459, 30, 1121, 82), (512, 30, 1121, 82), (405, 31, 1121, 82), (406, 31, 1121, 82), (458, 31, 1121, 82), (459, 31, 1121, 82), (512, 31, 1121, 82), (405, 32, 1121, 82), (458, 32, 1121, 82), (459, 32, 1121, 82), (512, 32, 1121, 82), (458, 33, 1121, 82), (459, 33, 1121, 82)]', 'distance': '25'}
+11:33:17 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (3, [(458, 28, 1121, 82), (405, 30, 1121, 82), (512, 30, 1121, 82)])
+11:33:17 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(566, 30, 1121, 82), (567, 30, 1121, 82), (565, 31, 1121, 82), (566, 31, 1121, 82), (567, 31, 1121, 82), (619, 31, 1121, 82), (620, 31, 1121, 82), (566, 32, 1121, 82), (567, 32, 1121, 82)]', 'distance': '25'}
+11:33:17 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(566, 30, 1121, 82), (619, 31, 1121, 82)])
+11:33:17 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(671, 30, 1121, 82), (672, 30, 1121, 82), (673, 30, 1121, 82), (671, 31, 1121, 82), (672, 31, 1121, 82), (673, 31, 1121, 82), (671, 32, 1121, 82), (672, 32, 1121, 82), (673, 32, 1121, 82)]', 'distance': '25'}
+11:33:17 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (1, [(671, 30, 1121, 82)])
+11:33:17 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(726, 30, 1121, 82), (779, 30, 1121, 82), (725, 31, 1121, 82), (726, 31, 1121, 82), (778, 31, 1121, 82), (779, 31, 1121, 82), (725, 32, 1121, 82), (778, 32, 1121, 82)]', 'distance': '25'}
+11:33:17 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(726, 30, 1121, 82), (779, 30, 1121, 82)])
+11:33:17 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(831, 29, 1121, 82), (832, 29, 1121, 82), (884, 29, 1121, 82), (831, 30, 1121, 82), (832, 30, 1121, 82), (833, 30, 1121, 82), (883, 30, 1121, 82), (884, 30, 1121, 82), (831, 31, 1121, 82), (832, 31, 1121, 82), (884, 31, 1121, 82)]', 'distance': '25'}
+11:33:17 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(831, 29, 1121, 82), (884, 29, 1121, 82)])
+11:33:17 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(937, 30, 1121, 82), (936, 31, 1121, 82), (937, 31, 1121, 82), (936, 32, 1121, 82)]', 'distance': '25'}
+11:33:17 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (1, [(937, 30, 1121, 82)])
+11:33:17 -             来自: main.py:383 - find_my_cards                    | 函数返回            | __main__.cards_info                      | 返回值: 22KKQQTTT99877664
+11:33:17 -         来自: main.py:703 - before_start                     | 函数返回            | __main__.find_my_cards                   | 返回值: 22KKQQTTT99877664
+11:33:17 - 来自: main.py:1743 - <module>                        | 调用函数            | __main__.state_display                   | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>', 'result': '在游戏中'}
+11:33:17 - 来自: main.py:1743 - <module>                        | 函数返回            | __main__.state_display                   | 返回值: None
+11:33:18 - 来自: main.py:1743 - <module>                        | 调用函数            | __main__.bid_display                     | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>', 'result': '得分：0.038'}
+11:33:18 -         来自: main.py:761 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:18 - 来自: main.py:1743 - <module>                        | 函数返回            | __main__.bid_display                     | 返回值: None
+11:33:18 - 来自: main.py:1743 - <module>                        | 调用函数            | __main__.suggest1_text                   | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>', 'result': '建议： 不叫'}
+11:33:18 - 来自: main.py:1743 - <module>                        | 函数返回            | __main__.suggest1_text                   | 返回值: None
+11:33:18 - 来自: main.py:1743 - <module>                        | 调用函数            | __main__.suggest2_text                   | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>', 'result': '建议： 不加倍'}
+11:33:18 - 来自: main.py:1743 - <module>                        | 函数返回            | __main__.suggest2_text                   | 返回值: None
+11:33:18 - 来自: main.py:1743 - <module>                        | 调用函数            | __main__.cards_recorder                  | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>', 'result': 'DX22AAAAKKQQJJJJT99888776655554443333'}
+11:33:18 - 来自: main.py:1743 - <module>                        | 函数返回            | __main__.cards_recorder                  | 返回值: None
+11:33:18 -             来自: main.py:383 - find_my_cards                    | 调用函数            | __main__.cards_info                      | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>', 'img': '[[[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n ...\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]]', 'pos': '(54, 481, 1121, 82)', 'mark': 'm', 'confidence': '0.8'}
+11:33:18 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(107, 30, 1121, 82), (108, 30, 1121, 82), (109, 30, 1121, 82), (159, 30, 1121, 82), (107, 31, 1121, 82), (108, 31, 1121, 82), (109, 31, 1121, 82), (158, 31, 1121, 82), (159, 31, 1121, 82), (107, 32, 1121, 82), (108, 32, 1121, 82), (109, 32, 1121, 82)]', 'distance': '25'}
+11:33:18 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(107, 30, 1121, 82), (159, 30, 1121, 82)])
+11:33:18 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(259, 28, 1121, 82), (209, 29, 1121, 82), (259, 29, 1121, 82), (260, 29, 1121, 82), (208, 30, 1121, 82), (209, 30, 1121, 82), (258, 30, 1121, 82), (259, 30, 1121, 82), (260, 30, 1121, 82)]', 'distance': '25'}
+11:33:18 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(259, 28, 1121, 82), (209, 29, 1121, 82)])
+11:33:18 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(309, 29, 1121, 82), (310, 29, 1121, 82), (309, 30, 1121, 82), (310, 30, 1121, 82), (360, 30, 1121, 82), (309, 31, 1121, 82), (310, 31, 1121, 82), (311, 31, 1121, 82), (360, 31, 1121, 82), (361, 31, 1121, 82), (309, 32, 1121, 82), (310, 32, 1121, 82), (311, 32, 1121, 82), (360, 32, 1121, 82), (310, 33, 1121, 82)]', 'distance': '25'}
+11:33:18 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(309, 29, 1121, 82), (360, 30, 1121, 82)])
+11:33:18 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(461, 28, 1121, 82), (461, 29, 1121, 82), (462, 29, 1121, 82), (411, 30, 1121, 82), (461, 30, 1121, 82), (462, 30, 1121, 82), (512, 30, 1121, 82), (410, 31, 1121, 82), (411, 31, 1121, 82), (461, 31, 1121, 82), (462, 31, 1121, 82), (512, 31, 1121, 82), (411, 32, 1121, 82), (461, 32, 1121, 82), (462, 32, 1121, 82), (512, 32, 1121, 82), (461, 33, 1121, 82)]', 'distance': '25'}
+11:33:18 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (3, [(461, 28, 1121, 82), (411, 30, 1121, 82), (512, 30, 1121, 82)])
+11:33:18 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(563, 30, 1121, 82), (564, 30, 1121, 82), (565, 30, 1121, 82), (563, 31, 1121, 82), (564, 31, 1121, 82), (565, 31, 1121, 82), (614, 31, 1121, 82), (615, 31, 1121, 82), (563, 32, 1121, 82), (564, 32, 1121, 82), (565, 32, 1121, 82)]', 'distance': '25'}
+11:33:18 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(563, 30, 1121, 82), (614, 31, 1121, 82)])
+11:33:18 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(663, 30, 1121, 82), (664, 30, 1121, 82), (665, 30, 1121, 82), (663, 31, 1121, 82), (664, 31, 1121, 82), (665, 31, 1121, 82), (663, 32, 1121, 82), (664, 32, 1121, 82), (665, 32, 1121, 82)]', 'distance': '25'}
+11:33:18 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (1, [(663, 30, 1121, 82)])
+11:33:18 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(715, 30, 1121, 82), (766, 30, 1121, 82), (714, 31, 1121, 82), (715, 31, 1121, 82), (765, 31, 1121, 82), (766, 31, 1121, 82), (715, 32, 1121, 82), (765, 32, 1121, 82)]', 'distance': '25'}
+11:33:18 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(715, 30, 1121, 82), (766, 30, 1121, 82)])
+11:33:18 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(815, 29, 1121, 82), (816, 29, 1121, 82), (817, 29, 1121, 82), (815, 30, 1121, 82), (816, 30, 1121, 82), (817, 30, 1121, 82), (866, 30, 1121, 82), (867, 30, 1121, 82), (815, 31, 1121, 82), (816, 31, 1121, 82), (817, 31, 1121, 82)]', 'distance': '25'}
+11:33:18 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(815, 29, 1121, 82), (866, 30, 1121, 82)])
+11:33:18 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(916, 30, 1121, 82), (917, 30, 1121, 82), (916, 31, 1121, 82), (917, 31, 1121, 82), (916, 32, 1121, 82)]', 'distance': '25'}
+11:33:18 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (1, [(916, 30, 1121, 82)])
+11:33:18 -             来自: main.py:383 - find_my_cards                    | 函数返回            | __main__.cards_info                      | 返回值: 22KKQQTTT99877664
+11:33:18 -         来自: main.py:761 - before_start                     | 函数返回            | __main__.find_my_cards                   | 返回值: 22KKQQTTT99877664
+11:33:18 -         来自: main.py:818 - before_start                     | 调用函数            | __main__.find_pic                        | 参数: {'path': 'jiao_btn', 'pos': '(214, 380, 791, 93)', 'click': 'False'}
+11:33:18 -         来自: main.py:818 - before_start                     | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:18 -         来自: main.py:836 - before_start                     | 调用函数            | __main__.find_pic                        | 参数: {'path': 'qiang_btn', 'pos': '(214, 380, 791, 93)', 'click': 'False'}
+11:33:18 -         来自: main.py:836 - before_start                     | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:20 -         来自: main.py:852 - before_start                     | 调用函数            | __main__.find_three_cards                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:20 -             来自: main.py:404 - find_three_cards                 | 调用函数            | __main__.yolo_info                       | 参数: {'pos': '(958, 53, 139, 59)'}
+11:33:20 -             来自: main.py:404 - find_three_cards                 | 函数返回            | __main__.yolo_info                       | 返回值: (array([[[218, 222, 211],
+        [218, 222, 211],
+        [218, 222, 211],
+        ...,
+        [223, 222, 211],
+        [223, 222, 211],
+        [221, 222, 211]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [232, 232, 219],
+        [232, 232, 219],
+        [232, 232, 220]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [233, 233, 220],
+        [233, 233, 220],
+        [233, 233, 220]],
+
+       ...,
+
+       [[175, 172, 163],
+        [175, 172, 163],
+        [175, 171, 163],
+        ...,
+        [175, 171, 164],
+        [175, 171, 164],
+        [175, 171, 164]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 163]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 164]]], dtype=uint8), None, None)
+11:33:20 -         来自: main.py:852 - before_start                     | 函数返回            | __main__.find_three_cards                | 返回值: 
+11:33:20 -         来自: main.py:858 - before_start                     | 调用函数            | __main__.find_my_cards                   | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:20 - 来自: main.py:1743 - <module>                        | 调用函数            | __main__.three_cards_display             | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>', 'result': '底牌：'}
+11:33:20 - 来自: main.py:1743 - <module>                        | 函数返回            | __main__.three_cards_display             | 返回值: None
+11:33:20 -             来自: main.py:383 - find_my_cards                    | 调用函数            | __main__.cards_info                      | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>', 'img': '[[[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n ...\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]\n\n [[0 0 0]\n  [0 0 0]\n  [0 0 0]\n  ...\n  [0 0 0]\n  [0 0 0]\n  [0 0 0]]]', 'pos': '(54, 481, 1121, 82)', 'mark': 'm', 'confidence': '0.8'}
+11:33:20 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(107, 30, 1121, 82), (108, 30, 1121, 82), (109, 30, 1121, 82), (159, 30, 1121, 82), (107, 31, 1121, 82), (108, 31, 1121, 82), (109, 31, 1121, 82), (158, 31, 1121, 82), (159, 31, 1121, 82), (107, 32, 1121, 82), (108, 32, 1121, 82), (109, 32, 1121, 82)]', 'distance': '25'}
+11:33:20 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(107, 30, 1121, 82), (159, 30, 1121, 82)])
+11:33:20 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(259, 28, 1121, 82), (209, 29, 1121, 82), (259, 29, 1121, 82), (260, 29, 1121, 82), (208, 30, 1121, 82), (209, 30, 1121, 82), (258, 30, 1121, 82), (259, 30, 1121, 82), (260, 30, 1121, 82)]', 'distance': '25'}
+11:33:20 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(259, 28, 1121, 82), (209, 29, 1121, 82)])
+11:33:20 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(309, 29, 1121, 82), (310, 29, 1121, 82), (309, 30, 1121, 82), (310, 30, 1121, 82), (360, 30, 1121, 82), (309, 31, 1121, 82), (310, 31, 1121, 82), (311, 31, 1121, 82), (360, 31, 1121, 82), (361, 31, 1121, 82), (309, 32, 1121, 82), (310, 32, 1121, 82), (311, 32, 1121, 82), (360, 32, 1121, 82), (310, 33, 1121, 82)]', 'distance': '25'}
+11:33:20 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(309, 29, 1121, 82), (360, 30, 1121, 82)])
+11:33:20 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(461, 28, 1121, 82), (461, 29, 1121, 82), (462, 29, 1121, 82), (411, 30, 1121, 82), (461, 30, 1121, 82), (462, 30, 1121, 82), (512, 30, 1121, 82), (410, 31, 1121, 82), (411, 31, 1121, 82), (461, 31, 1121, 82), (462, 31, 1121, 82), (512, 31, 1121, 82), (411, 32, 1121, 82), (461, 32, 1121, 82), (462, 32, 1121, 82), (512, 32, 1121, 82), (461, 33, 1121, 82)]', 'distance': '25'}
+11:33:20 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (3, [(461, 28, 1121, 82), (411, 30, 1121, 82), (512, 30, 1121, 82)])
+11:33:20 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(563, 30, 1121, 82), (564, 30, 1121, 82), (565, 30, 1121, 82), (563, 31, 1121, 82), (564, 31, 1121, 82), (565, 31, 1121, 82), (614, 31, 1121, 82), (615, 31, 1121, 82), (563, 32, 1121, 82), (564, 32, 1121, 82), (565, 32, 1121, 82)]', 'distance': '25'}
+11:33:20 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(563, 30, 1121, 82), (614, 31, 1121, 82)])
+11:33:20 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(663, 30, 1121, 82), (664, 30, 1121, 82), (665, 30, 1121, 82), (663, 31, 1121, 82), (664, 31, 1121, 82), (665, 31, 1121, 82), (663, 32, 1121, 82), (664, 32, 1121, 82), (665, 32, 1121, 82)]', 'distance': '25'}
+11:33:20 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (1, [(663, 30, 1121, 82)])
+11:33:20 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(715, 30, 1121, 82), (766, 30, 1121, 82), (714, 31, 1121, 82), (715, 31, 1121, 82), (765, 31, 1121, 82), (766, 31, 1121, 82), (715, 32, 1121, 82), (765, 32, 1121, 82)]', 'distance': '25'}
+11:33:20 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(715, 30, 1121, 82), (766, 30, 1121, 82)])
+11:33:20 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(815, 29, 1121, 82), (816, 29, 1121, 82), (817, 29, 1121, 82), (815, 30, 1121, 82), (816, 30, 1121, 82), (817, 30, 1121, 82), (866, 30, 1121, 82), (867, 30, 1121, 82), (815, 31, 1121, 82), (816, 31, 1121, 82), (817, 31, 1121, 82)]', 'distance': '25'}
+11:33:20 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (2, [(815, 29, 1121, 82), (866, 30, 1121, 82)])
+11:33:20 -                 来自: main.py:329 - cards_info                       | 调用函数            | __main__.cards_filter                    | 参数: {'location': '[(916, 30, 1121, 82), (917, 30, 1121, 82), (916, 31, 1121, 82), (917, 31, 1121, 82), (916, 32, 1121, 82)]', 'distance': '25'}
+11:33:20 -                 来自: main.py:329 - cards_info                       | 函数返回            | __main__.cards_filter                    | 返回值: (1, [(916, 30, 1121, 82)])
+11:33:20 -             来自: main.py:383 - find_my_cards                    | 函数返回            | __main__.cards_info                      | 返回值: 22KKQQTTT99877664
+11:33:20 -         来自: main.py:858 - before_start                     | 函数返回            | __main__.find_my_cards                   | 返回值: 22KKQQTTT99877664
+11:33:20 - 来自: main.py:1743 - <module>                        | 调用函数            | __main__.bid_display                     | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>', 'result': '得分：-0.033'}
+11:33:20 -     来自: main.py:281 - run                              | 函数返回            | __main__.before_start                    | 返回值: None
+11:33:20 - 来自: main.py:1743 - <module>                        | 函数返回            | __main__.bid_display                     | 返回值: None
+11:33:20 -     来自: main.py:283 - run                              | 调用函数            | __main__.init_cards                      | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:20 - 来自: main.py:1743 - <module>                        | 调用函数            | __main__.suggest2_text                   | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>', 'result': '建议： 不加倍'}
+11:33:20 - 来自: main.py:1743 - <module>                        | 函数返回            | __main__.suggest2_text                   | 返回值: None
+11:33:20 - 来自: main.py:1743 - <module>                        | 调用函数            | __main__.state_display                   | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>', 'result': '加倍阶段结束'}
+11:33:20 - 来自: main.py:1743 - <module>                        | 函数返回            | __main__.state_display                   | 返回值: None
+11:33:20 - 来自: main.py:1743 - <module>                        | 调用函数            | __main__.state_display                   | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>', 'result': '出牌前阶段'}
+11:33:20 - 来自: main.py:1743 - <module>                        | 函数返回            | __main__.state_display                   | 返回值: None
+11:33:20 -         来自: main.py:947 - init_cards                       | 调用函数            | __main__.find_three_cards                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:20 -             来自: main.py:404 - find_three_cards                 | 调用函数            | __main__.yolo_info                       | 参数: {'pos': '(958, 53, 139, 59)'}
+11:33:20 -             来自: main.py:404 - find_three_cards                 | 函数返回            | __main__.yolo_info                       | 返回值: (array([[[218, 222, 211],
+        [218, 222, 211],
+        [218, 222, 211],
+        ...,
+        [223, 222, 211],
+        [223, 222, 211],
+        [221, 222, 211]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [232, 232, 219],
+        [232, 232, 219],
+        [232, 232, 220]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [233, 233, 220],
+        [233, 233, 220],
+        [233, 233, 220]],
+
+       ...,
+
+       [[175, 172, 163],
+        [175, 172, 163],
+        [175, 171, 163],
+        ...,
+        [175, 171, 164],
+        [175, 171, 164],
+        [175, 171, 164]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 163]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 164]]], dtype=uint8), None, None)
+11:33:20 -         来自: main.py:947 - init_cards                       | 函数返回            | __main__.find_three_cards                | 返回值: 
+11:33:20 -         来自: main.py:948 - init_cards                       | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:21 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:21 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:21 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:21 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:21 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:21 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:21 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:21 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:21 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:21 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:21 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:21 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:21 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:21 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:21 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:21 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:21 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:21 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:21 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:21 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:21 -         来自: main.py:948 - init_cards                       | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:21 -         来自: main.py:947 - init_cards                       | 调用函数            | __main__.find_three_cards                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:21 -             来自: main.py:404 - find_three_cards                 | 调用函数            | __main__.yolo_info                       | 参数: {'pos': '(958, 53, 139, 59)'}
+11:33:21 -             来自: main.py:404 - find_three_cards                 | 函数返回            | __main__.yolo_info                       | 返回值: (array([[[218, 222, 211],
+        [218, 222, 211],
+        [218, 222, 211],
+        ...,
+        [223, 222, 211],
+        [223, 222, 211],
+        [221, 222, 211]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [232, 232, 219],
+        [232, 232, 219],
+        [232, 232, 220]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [233, 233, 220],
+        [233, 233, 220],
+        [233, 233, 220]],
+
+       ...,
+
+       [[175, 172, 163],
+        [175, 172, 163],
+        [175, 171, 163],
+        ...,
+        [175, 171, 164],
+        [175, 171, 164],
+        [175, 171, 164]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 163]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 164]]], dtype=uint8), None, None)
+11:33:21 -         来自: main.py:947 - init_cards                       | 函数返回            | __main__.find_three_cards                | 返回值: 
+11:33:21 -         来自: main.py:948 - init_cards                       | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:21 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:21 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:21 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:21 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:21 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:21 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:21 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:22 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:22 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:22 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:22 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:22 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:22 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:22 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:22 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:22 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:22 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:22 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:22 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:22 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:22 -         来自: main.py:948 - init_cards                       | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:22 -         来自: main.py:947 - init_cards                       | 调用函数            | __main__.find_three_cards                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:22 -             来自: main.py:404 - find_three_cards                 | 调用函数            | __main__.yolo_info                       | 参数: {'pos': '(958, 53, 139, 59)'}
+11:33:22 -             来自: main.py:404 - find_three_cards                 | 函数返回            | __main__.yolo_info                       | 返回值: (array([[[218, 222, 211],
+        [218, 222, 211],
+        [218, 222, 211],
+        ...,
+        [223, 222, 211],
+        [223, 222, 211],
+        [221, 222, 211]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [232, 232, 219],
+        [232, 232, 219],
+        [232, 232, 220]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [233, 233, 220],
+        [233, 233, 220],
+        [233, 233, 220]],
+
+       ...,
+
+       [[175, 172, 163],
+        [175, 172, 163],
+        [175, 171, 163],
+        ...,
+        [175, 171, 164],
+        [175, 171, 164],
+        [175, 171, 164]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 163]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 164]]], dtype=uint8), None, None)
+11:33:22 -         来自: main.py:947 - init_cards                       | 函数返回            | __main__.find_three_cards                | 返回值: 
+11:33:22 -         来自: main.py:948 - init_cards                       | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:22 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:22 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:22 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:22 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:22 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:22 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:22 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:22 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:22 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:22 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:22 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:22 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:22 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:22 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:22 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:23 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:23 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:23 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:23 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:23 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:23 -         来自: main.py:948 - init_cards                       | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:23 -         来自: main.py:947 - init_cards                       | 调用函数            | __main__.find_three_cards                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:23 -             来自: main.py:404 - find_three_cards                 | 调用函数            | __main__.yolo_info                       | 参数: {'pos': '(958, 53, 139, 59)'}
+11:33:23 -             来自: main.py:404 - find_three_cards                 | 函数返回            | __main__.yolo_info                       | 返回值: (array([[[218, 222, 211],
+        [218, 222, 211],
+        [218, 222, 211],
+        ...,
+        [223, 222, 211],
+        [223, 222, 211],
+        [221, 222, 211]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [232, 232, 219],
+        [232, 232, 219],
+        [232, 232, 220]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [233, 233, 220],
+        [233, 233, 220],
+        [233, 233, 220]],
+
+       ...,
+
+       [[175, 172, 163],
+        [175, 172, 163],
+        [175, 171, 163],
+        ...,
+        [175, 171, 164],
+        [175, 171, 164],
+        [175, 171, 164]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 163]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 164]]], dtype=uint8), None, None)
+11:33:23 -         来自: main.py:947 - init_cards                       | 函数返回            | __main__.find_three_cards                | 返回值: 
+11:33:23 -         来自: main.py:948 - init_cards                       | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:23 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:23 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:23 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:23 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:23 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:23 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:23 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:23 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:23 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:23 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:23 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:23 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:23 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:23 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:23 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:23 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:23 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:23 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:23 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:23 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:23 -         来自: main.py:948 - init_cards                       | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:24 -         来自: main.py:947 - init_cards                       | 调用函数            | __main__.find_three_cards                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:24 -             来自: main.py:404 - find_three_cards                 | 调用函数            | __main__.yolo_info                       | 参数: {'pos': '(958, 53, 139, 59)'}
+11:33:24 -             来自: main.py:404 - find_three_cards                 | 函数返回            | __main__.yolo_info                       | 返回值: (array([[[218, 222, 211],
+        [218, 222, 211],
+        [218, 222, 211],
+        ...,
+        [223, 222, 211],
+        [223, 222, 211],
+        [221, 222, 211]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [232, 232, 219],
+        [232, 232, 219],
+        [232, 232, 220]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [233, 233, 220],
+        [233, 233, 220],
+        [233, 233, 220]],
+
+       ...,
+
+       [[175, 172, 163],
+        [175, 172, 163],
+        [175, 171, 163],
+        ...,
+        [175, 171, 164],
+        [175, 171, 164],
+        [175, 171, 164]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 163]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 164]]], dtype=uint8), None, None)
+11:33:24 -         来自: main.py:947 - init_cards                       | 函数返回            | __main__.find_three_cards                | 返回值: 
+11:33:24 -         来自: main.py:948 - init_cards                       | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:24 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:24 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:24 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:24 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:24 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:24 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:24 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:24 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:24 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:24 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:24 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:24 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:24 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:24 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:24 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:24 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:24 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:24 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:24 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:24 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:24 -         来自: main.py:948 - init_cards                       | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:24 -         来自: main.py:947 - init_cards                       | 调用函数            | __main__.find_three_cards                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:24 -             来自: main.py:404 - find_three_cards                 | 调用函数            | __main__.yolo_info                       | 参数: {'pos': '(958, 53, 139, 59)'}
+11:33:25 -             来自: main.py:404 - find_three_cards                 | 函数返回            | __main__.yolo_info                       | 返回值: (array([[[218, 222, 211],
+        [218, 222, 211],
+        [218, 222, 211],
+        ...,
+        [223, 222, 211],
+        [223, 222, 211],
+        [221, 222, 211]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [232, 232, 219],
+        [232, 232, 219],
+        [232, 232, 220]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [233, 233, 220],
+        [233, 233, 220],
+        [233, 233, 220]],
+
+       ...,
+
+       [[175, 172, 163],
+        [175, 172, 163],
+        [175, 171, 163],
+        ...,
+        [175, 171, 164],
+        [175, 171, 164],
+        [175, 171, 164]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 163]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 164]]], dtype=uint8), None, None)
+11:33:25 -         来自: main.py:947 - init_cards                       | 函数返回            | __main__.find_three_cards                | 返回值: 
+11:33:25 -         来自: main.py:948 - init_cards                       | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:25 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:25 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:25 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:25 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:25 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:25 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:25 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:25 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:25 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:25 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:25 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:25 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:25 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:25 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:25 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:25 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:25 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:25 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:25 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:25 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:25 -         来自: main.py:948 - init_cards                       | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:25 -         来自: main.py:947 - init_cards                       | 调用函数            | __main__.find_three_cards                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:25 -             来自: main.py:404 - find_three_cards                 | 调用函数            | __main__.yolo_info                       | 参数: {'pos': '(958, 53, 139, 59)'}
+11:33:25 -             来自: main.py:404 - find_three_cards                 | 函数返回            | __main__.yolo_info                       | 返回值: (array([[[218, 222, 211],
+        [218, 222, 211],
+        [218, 222, 211],
+        ...,
+        [223, 222, 211],
+        [223, 222, 211],
+        [221, 222, 211]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [232, 232, 219],
+        [232, 232, 219],
+        [232, 232, 220]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [233, 233, 220],
+        [233, 233, 220],
+        [233, 233, 220]],
+
+       ...,
+
+       [[175, 172, 163],
+        [175, 172, 163],
+        [175, 171, 163],
+        ...,
+        [175, 171, 164],
+        [175, 171, 164],
+        [175, 171, 164]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 163]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 164]]], dtype=uint8), None, None)
+11:33:25 -         来自: main.py:947 - init_cards                       | 函数返回            | __main__.find_three_cards                | 返回值: 
+11:33:25 -         来自: main.py:948 - init_cards                       | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:25 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:25 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:25 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:25 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:25 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:26 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:26 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:26 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:26 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:26 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:26 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:26 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:26 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:26 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:26 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:26 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:26 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:26 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:26 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:26 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:26 -         来自: main.py:948 - init_cards                       | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:26 -         来自: main.py:947 - init_cards                       | 调用函数            | __main__.find_three_cards                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:26 -             来自: main.py:404 - find_three_cards                 | 调用函数            | __main__.yolo_info                       | 参数: {'pos': '(958, 53, 139, 59)'}
+11:33:26 -             来自: main.py:404 - find_three_cards                 | 函数返回            | __main__.yolo_info                       | 返回值: (array([[[218, 222, 211],
+        [218, 222, 211],
+        [218, 222, 211],
+        ...,
+        [223, 222, 211],
+        [223, 222, 211],
+        [221, 222, 211]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [232, 232, 219],
+        [232, 232, 219],
+        [232, 232, 220]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [233, 233, 220],
+        [233, 233, 220],
+        [233, 233, 220]],
+
+       ...,
+
+       [[175, 172, 163],
+        [175, 172, 163],
+        [175, 171, 163],
+        ...,
+        [175, 171, 164],
+        [175, 171, 164],
+        [175, 171, 164]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 163]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 164]]], dtype=uint8), None, None)
+11:33:26 -         来自: main.py:947 - init_cards                       | 函数返回            | __main__.find_three_cards                | 返回值: 
+11:33:26 -         来自: main.py:948 - init_cards                       | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:26 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:26 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:26 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:26 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:26 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:26 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:26 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:26 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:26 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:26 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:26 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:26 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:26 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:26 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:26 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:26 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:26 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:26 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:26 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:27 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:27 -         来自: main.py:948 - init_cards                       | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:27 -         来自: main.py:947 - init_cards                       | 调用函数            | __main__.find_three_cards                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:27 -             来自: main.py:404 - find_three_cards                 | 调用函数            | __main__.yolo_info                       | 参数: {'pos': '(958, 53, 139, 59)'}
+11:33:27 -             来自: main.py:404 - find_three_cards                 | 函数返回            | __main__.yolo_info                       | 返回值: (array([[[218, 222, 211],
+        [218, 222, 211],
+        [218, 222, 211],
+        ...,
+        [223, 222, 211],
+        [223, 222, 211],
+        [221, 222, 211]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [232, 232, 219],
+        [232, 232, 219],
+        [232, 232, 220]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [233, 233, 220],
+        [233, 233, 220],
+        [233, 233, 220]],
+
+       ...,
+
+       [[175, 172, 163],
+        [175, 172, 163],
+        [175, 171, 163],
+        ...,
+        [175, 171, 164],
+        [175, 171, 164],
+        [175, 171, 164]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 163]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 164]]], dtype=uint8), None, None)
+11:33:27 -         来自: main.py:947 - init_cards                       | 函数返回            | __main__.find_three_cards                | 返回值: 
+11:33:27 -         来自: main.py:948 - init_cards                       | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:27 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:27 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:27 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:27 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:27 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:27 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:27 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:27 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:27 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:27 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:27 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:27 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:27 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:27 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:27 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:27 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:27 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:27 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:27 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:27 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:27 -         来自: main.py:948 - init_cards                       | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:27 -         来自: main.py:947 - init_cards                       | 调用函数            | __main__.find_three_cards                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:27 -             来自: main.py:404 - find_three_cards                 | 调用函数            | __main__.yolo_info                       | 参数: {'pos': '(958, 53, 139, 59)'}
+11:33:28 -             来自: main.py:404 - find_three_cards                 | 函数返回            | __main__.yolo_info                       | 返回值: (array([[[218, 222, 211],
+        [218, 222, 211],
+        [218, 222, 211],
+        ...,
+        [223, 222, 211],
+        [223, 222, 211],
+        [221, 222, 211]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [232, 232, 219],
+        [232, 232, 219],
+        [232, 232, 220]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [233, 233, 220],
+        [233, 233, 220],
+        [233, 233, 220]],
+
+       ...,
+
+       [[175, 172, 163],
+        [175, 172, 163],
+        [175, 171, 163],
+        ...,
+        [175, 171, 164],
+        [175, 171, 164],
+        [175, 171, 164]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 163]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 164]]], dtype=uint8), None, None)
+11:33:28 -         来自: main.py:947 - init_cards                       | 函数返回            | __main__.find_three_cards                | 返回值: 
+11:33:28 -         来自: main.py:948 - init_cards                       | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:28 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:28 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:28 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:28 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:28 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:28 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:28 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:28 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:28 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:28 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:28 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:28 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:28 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:28 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:28 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:28 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:28 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:28 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:28 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:28 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:28 -         来自: main.py:948 - init_cards                       | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:28 -         来自: main.py:947 - init_cards                       | 调用函数            | __main__.find_three_cards                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:28 -             来自: main.py:404 - find_three_cards                 | 调用函数            | __main__.yolo_info                       | 参数: {'pos': '(958, 53, 139, 59)'}
+11:33:28 -             来自: main.py:404 - find_three_cards                 | 函数返回            | __main__.yolo_info                       | 返回值: (array([[[218, 222, 211],
+        [218, 222, 211],
+        [218, 222, 211],
+        ...,
+        [223, 222, 211],
+        [223, 222, 211],
+        [221, 222, 211]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [232, 232, 219],
+        [232, 232, 219],
+        [232, 232, 220]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [233, 233, 220],
+        [233, 233, 220],
+        [233, 233, 220]],
+
+       ...,
+
+       [[175, 172, 163],
+        [175, 172, 163],
+        [175, 171, 163],
+        ...,
+        [175, 171, 164],
+        [175, 171, 164],
+        [175, 171, 164]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 163]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 164]]], dtype=uint8), None, None)
+11:33:28 -         来自: main.py:947 - init_cards                       | 函数返回            | __main__.find_three_cards                | 返回值: 
+11:33:28 -         来自: main.py:948 - init_cards                       | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:29 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:29 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:29 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:29 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:29 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:29 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:29 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:29 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:29 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:29 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:29 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:29 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:29 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:29 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:29 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:29 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:29 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:29 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:29 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:29 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:29 -         来自: main.py:948 - init_cards                       | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:29 -         来自: main.py:947 - init_cards                       | 调用函数            | __main__.find_three_cards                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:29 -             来自: main.py:404 - find_three_cards                 | 调用函数            | __main__.yolo_info                       | 参数: {'pos': '(958, 53, 139, 59)'}
+11:33:29 -             来自: main.py:404 - find_three_cards                 | 函数返回            | __main__.yolo_info                       | 返回值: (array([[[218, 222, 211],
+        [218, 222, 211],
+        [218, 222, 211],
+        ...,
+        [223, 222, 211],
+        [223, 222, 211],
+        [221, 222, 211]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [232, 232, 219],
+        [232, 232, 219],
+        [232, 232, 220]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [233, 233, 220],
+        [233, 233, 220],
+        [233, 233, 220]],
+
+       ...,
+
+       [[175, 172, 163],
+        [175, 172, 163],
+        [175, 171, 163],
+        ...,
+        [175, 171, 164],
+        [175, 171, 164],
+        [175, 171, 164]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 163]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 164]]], dtype=uint8), None, None)
+11:33:29 -         来自: main.py:947 - init_cards                       | 函数返回            | __main__.find_three_cards                | 返回值: 
+11:33:29 -         来自: main.py:948 - init_cards                       | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:29 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:29 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:29 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:29 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:29 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:29 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:29 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:29 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:29 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:29 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:29 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:30 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:30 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:30 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:30 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:30 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:30 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:30 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:30 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:30 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:30 -         来自: main.py:948 - init_cards                       | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:30 -         来自: main.py:947 - init_cards                       | 调用函数            | __main__.find_three_cards                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:30 -             来自: main.py:404 - find_three_cards                 | 调用函数            | __main__.yolo_info                       | 参数: {'pos': '(958, 53, 139, 59)'}
+11:33:30 -             来自: main.py:404 - find_three_cards                 | 函数返回            | __main__.yolo_info                       | 返回值: (array([[[218, 222, 211],
+        [218, 222, 211],
+        [218, 222, 211],
+        ...,
+        [223, 222, 211],
+        [223, 222, 211],
+        [221, 222, 211]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [232, 232, 219],
+        [232, 232, 219],
+        [232, 232, 220]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [233, 233, 220],
+        [233, 233, 220],
+        [233, 233, 220]],
+
+       ...,
+
+       [[175, 172, 163],
+        [175, 172, 163],
+        [175, 171, 163],
+        ...,
+        [175, 171, 164],
+        [175, 171, 164],
+        [175, 171, 164]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 163]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 164]]], dtype=uint8), None, None)
+11:33:30 -         来自: main.py:947 - init_cards                       | 函数返回            | __main__.find_three_cards                | 返回值: 
+11:33:30 -         来自: main.py:948 - init_cards                       | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:30 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:30 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:30 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:30 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:30 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:30 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:30 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:30 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:30 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:30 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:30 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:30 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:30 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:30 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:30 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:30 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:30 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:30 -             来自: main.py:680 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:30 -             来自: main.py:683 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'quick_start', 'pos': '(831, 595, 219, 87)', 'click': 'True'}
+11:33:30 -             来自: main.py:683 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:30 -         来自: main.py:948 - init_cards                       | 函数返回            | __main__.detect_start_btn                | 返回值: None
+11:33:31 -         来自: main.py:947 - init_cards                       | 调用函数            | __main__.find_three_cards                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:31 -             来自: main.py:404 - find_three_cards                 | 调用函数            | __main__.yolo_info                       | 参数: {'pos': '(958, 53, 139, 59)'}
+11:33:31 -             来自: main.py:404 - find_three_cards                 | 函数返回            | __main__.yolo_info                       | 返回值: (array([[[218, 222, 211],
+        [218, 222, 211],
+        [218, 222, 211],
+        ...,
+        [223, 222, 211],
+        [223, 222, 211],
+        [221, 222, 211]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [232, 232, 219],
+        [232, 232, 219],
+        [232, 232, 220]],
+
+       [[231, 233, 221],
+        [231, 233, 221],
+        [231, 233, 221],
+        ...,
+        [233, 233, 220],
+        [233, 233, 220],
+        [233, 233, 220]],
+
+       ...,
+
+       [[175, 172, 163],
+        [175, 172, 163],
+        [175, 171, 163],
+        ...,
+        [175, 171, 164],
+        [175, 171, 164],
+        [175, 171, 164]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 163]],
+
+       [[174, 170, 161],
+        [174, 170, 161],
+        [174, 170, 161],
+        ...,
+        [174, 169, 163],
+        [174, 169, 163],
+        [174, 169, 164]]], dtype=uint8), None, None)
+11:33:31 -         来自: main.py:947 - init_cards                       | 函数返回            | __main__.find_three_cards                | 返回值: 
+11:33:31 -         来自: main.py:948 - init_cards                       | 调用函数            | __main__.detect_start_btn                | 参数: {'self': '<__main__.Worker object at 0x000001B58DBE45E0>'}
+11:33:31 -             来自: main.py:656 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'continue', 'pos': '(545, 503, 170, 60)', 'click': 'True'}
+11:33:31 -             来自: main.py:656 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:31 -             来自: main.py:659 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'reward', 'pos': '(521, 506, 199, 76)', 'click': 'True'}
+11:33:31 -             来自: main.py:659 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:31 -             来自: main.py:662 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'start_game', 'pos': '(201, 260, 840, 74)', 'click': 'True'}
+11:33:31 -             来自: main.py:662 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:31 -             来自: main.py:665 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuoguan', 'pos': '(485, 620, 269, 92)', 'click': 'True'}
+11:33:31 -             来自: main.py:665 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:31 -             来自: main.py:668 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'sure', 'pos': '(560, 405, 256, 127)', 'click': 'True'}
+11:33:31 -             来自: main.py:668 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:31 -             来自: main.py:671 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'tuijian', 'pos': '(648, 413, 194, 88)', 'click': 'True'}
+11:33:31 -             来自: main.py:671 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:31 -             来自: main.py:674 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'good', 'pos': '(385, 532, 194, 78)', 'click': 'True'}
+11:33:31 -             来自: main.py:674 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:31 -             来自: main.py:677 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'zhidao', 'pos': '(527, 482, 199, 83)', 'click': 'True'}
+11:33:31 -             来自: main.py:677 - detect_start_btn                 | 函数返回            | __main__.find_pic                        | 返回值: None
+11:33:31 -             来自: main.py:680 - detect_start_btn                 | 调用函数            | __main__.find_pic                        | 参数: {'path': 'chacha', 'pos': '(920, 57, 266, 204)', 'click': 'True'}
+11:33:31 - 来自: main.py:1743 - <module>                        | 调用函数            | __main__.stop                            | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>', 'result': 'False'}
+11:33:31 -     来自: main.py:1603 - stop                            | 调用函数            | __main__.init_interface                  | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>', 'result': '1'}
+11:33:31 -         来自: main.py:1657 - init_interface                  | 调用函数            | __main__.recorder2zero                   | 参数: {'self': '<__main__.MaYun object at 0x000001B58C209040>'}
+11:33:31 -         来自: main.py:1657 - init_interface                  | 函数返回            | __main__.recorder2zero                   | 返回值: None
+11:33:31 -     来自: main.py:1603 - stop                            | 函数返回            | __main__.init_interface                  | 返回值: None
+11:33:31 - 来自: main.py:1743 - <module>                        | 函数返回            | __main__.stop                            | 返回值: None

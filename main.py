@@ -45,13 +45,20 @@ helper = GameHelper()
 
 @trace_function
 def yolo_info(pos: tuple):
+    # 获取屏幕截图
     img = helper.Screenshot()
+    # 将图像从RGB格式转换为BGR格式
     img = cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)
     # img = cv2.imread("2.png")
+    # 从原始图像中裁剪出指定区域,pos[1]:pos[1]+pos[3]表示y轴范围(高度),pos[0]:pos[0]+pos[2]表示x轴范围(宽度)
     img = img[pos[1]:pos[1] + pos[3], pos[0]:pos[0] + pos[2]]
+    # 使用YOLO模型检测图像中的扑克牌,返回处理后的图像、检测到的牌面类别列表和位置列表
     img, class_list, pos_list = yolo_detect(img)
+    # 如果成功检测到牌面,调整每个检测框的坐标
     if class_list is not None:
+        # 将相对坐标转换为绝对坐标:x坐标加上区域左上角x坐标,y坐标加上区域左上角y坐标,保持宽度和高度不变
         pos_list = [[sublist[0] + pos[0], sublist[1] + pos[1]] + sublist[2:] for sublist in pos_list]
+    # 返回处理后的图像、牌面类别列表和调整后的位置列表
     return img, class_list, pos_list
 
 
@@ -232,6 +239,10 @@ class Worker(QThread):
         self.LPassPos = (321, 253, 99, 63)  # 左边不出区域
         self.RPassPos = (825, 259, 105, 54)  # 右边不出区域
         self.MPassPos = (497, 396, 169, 69)  # 我的不出区域
+        self.Mypics = (85, 615, 54, 72)  # 我的头像区域
+        self.Leftpics = (95, 216, 88, 100)  # 左边的头像区域
+        self.Rightpics = (1062, 213, 95, 100)  # 右边的头像区域
+
 
         self.model_path_dict = {
             'landlord': "baselines/resnet/resnet_landlord.ckpt",
@@ -300,7 +311,7 @@ class Worker(QThread):
         else:
             self.name = 1
 
-    @trace_function
+    
     # 识别图像中的卡牌信息的方法
     # 参数:img-截图图像,pos-识别区域,mark-标记前缀,confidence-匹配置信度
     def cards_info(self, img, pos, mark="", confidence=0.8):
@@ -392,12 +403,25 @@ class Worker(QThread):
 
     @trace_function
     def find_three_cards(self):
+        # 调用yolo_info函数识别地主的三张底牌,传入底牌区域坐标
+        # 返回三个值:img-截图,class_list-识别到的牌面列表,pos_list-牌的位置列表
         img, class_list, pos_list = yolo_info(self.ThreeCardsPos)
+        
+        # 如果成功识别到牌面(class_list不为空)
         if class_list is not None:
+            # 对牌面列表进行排序
+            # 使用lambda函数定义排序规则:按照'DX2AKQJT9876543'的顺序排序
+            # 大王D最大,小王X次之,2/A/K/Q/J/T/9/8/7/6/5/4/3最小
             class_list = sorted(class_list, key=lambda x: 'DX2AKQJT9876543'.index(x))
+            
+            # 将排序后的牌面列表合并为一个字符串
+            # 例如:['A','K','2'] -> 'AK2'
             cards = "".join(class_list)
         else:
+            # 如果没有识别到牌面,返回空字符串
             cards = ""
+            
+        # 返回识别到的三张底牌字符串
         return cards
 
     @trace_function
@@ -577,7 +601,7 @@ class Worker(QThread):
             elif len(left_cards) > 0:
                 return 2
 
-    @trace_function
+   
     # 检测游戏开始按钮和其他界面元素的函数
     def detect_start_btn(self):
         # 检测豆子图标,判断对局是否结束
@@ -795,7 +819,6 @@ class Worker(QThread):
                 self.recorder_display.emit(self.other_hands_cards_str)
 
             # 检测并处理叫地主按钮
-            # 检测是否出现叫地主按钮
             if find_pic("jiao_btn", self.ButtonsPos):
                 # 如果分数小于等于第一个叫分阈值
                 if score <= self.bid_thresholds[0]:
@@ -824,65 +847,67 @@ class Worker(QThread):
                         helper.ClickOnImage("qiang_btn", self.ButtonsPos)
                     self.suggest_1.emit("建议： 抢地主")
 
-            # # 检测并处理加倍按钮
+            # 检测并处理加倍按钮
             # if find_pic("jiabei", self.ButtonsPos):
-            #     # 等待1秒
-            #     time.sleep(1)
-            #     # 获取底牌
-            #     self.three_cards_real = self.find_three_cards()
-            #     # 打印底牌信息
-            #     print("底牌： ", self.three_cards_real)
-            #     # 显示底牌信息
-            #     self.three_cards_display.emit("底牌：" + self.three_cards_real)
-            #     # 获取手牌
-            #     hand_cards = self.find_my_cards()
-            #     # 如果是地主(20张牌)
-            #     if len(hand_cards) == 20:
-            #         # 使用地主模型预测分数
-            #         score = LandlordModel.predict_by_model(hand_cards, self.three_cards_real)
-            #         # 显示分数
-            #         self.bid_display.emit("得分：" + str(round(score, 3)))
-            #         # 根据分数给出加倍建议并执行
-            #         if self.bid_thresholds[1] < score <= self.bid_thresholds[2]:
-            #             if self.auto_sign:
-            #                 helper.ClickOnImage("jiabei", self.ButtonsPos)
-            #             self.suggest_2.emit("建议： 加倍")
-            #         elif score > self.bid_thresholds[2]:
-            #             if self.auto_sign:
-            #                 helper.ClickOnImage("chaojijiabei", self.ButtonsPos)
-            #             self.suggest_2.emit("建议： 超级加倍")
-            #         else:
-            #             if self.auto_sign:
-            #                 helper.ClickOnImage("bujiabei", self.ButtonsPos, confidence=0.6)
-            #             self.suggest_2.emit("建议： 不加倍")
-            #         break
-            #     # 如果是农民(17张牌)
-            #     elif len(hand_cards) == 17:
-            #         # 使用农民模型预测分数
-            #         score = FarmerModel.predict(hand_cards, "up")
-            #         # 显示分数
-            #         self.bid_display.emit("得分：" + str(round(score, 3)))
-            #         # 根据分数给出加倍建议并执行
-            #         if self.bid_thresholds[1] + 0.05 < score <= self.bid_thresholds[2] + 0.05:
-            #             if self.auto_sign:
-            #                 helper.ClickOnImage("jiabei", self.ButtonsPos)
-            #             self.suggest_2.emit("建议： 加倍")
-            #         elif score > self.bid_thresholds[2] + 0.05:
-            #             if self.auto_sign:
-            #                 helper.ClickOnImage("chaojijiabei", self.ButtonsPos)
-            #             self.suggest_2.emit("建议： 超级加倍")
-            #         else:
-            #             if self.auto_sign:
-            #                 helper.ClickOnImage("bujiabei", self.ButtonsPos)
-            #             self.suggest_2.emit("建议： 不加倍")
-            #         break
+            if find_pic("dizhu", self.Mypics) or find_pic("dizhu", self.Leftpics) or find_pic("dizhu", self.Rightpics):
+                print("成功识别over标志")
+                # 等待1秒
+                time.sleep(2)
+                # 获取底牌
+                self.three_cards_real = self.find_three_cards()
+                # 打印底牌信息
+                print("底牌： ", self.three_cards_real)
+                # 显示底牌信息
+                self.three_cards_display.emit("底牌：" + self.three_cards_real)
+                # 获取手牌
+                hand_cards = self.find_my_cards()
+                # 如果是地主(20张牌)
+                if len(hand_cards) == 20:
+                    # 使用地主模型预测分数
+                    score = LandlordModel.predict_by_model(hand_cards, self.three_cards_real)
+                    # 显示分数
+                    self.bid_display.emit("得分：" + str(round(score, 3)))
+                    # 根据分数给出加倍建议并执行
+                    if self.bid_thresholds[1] < score <= self.bid_thresholds[2]:
+                        # if self.auto_sign:
+                        #     # helper.ClickOnImage("jiabei", self.ButtonsPos)
+                        self.suggest_2.emit("建议： 加倍")
+                    elif score > self.bid_thresholds[2]:
+                        # if self.auto_sign:
+                        #     helper.ClickOnImage("chaojijiabei", self.ButtonsPos)
+                        self.suggest_2.emit("建议： 超级加倍")
+                    else:
+                        # if self.auto_sign:
+                        #     helper.ClickOnImage("bujiabei", self.ButtonsPos, confidence=0.6)
+                        self.suggest_2.emit("建议： 不加倍")
+                    break
+                # 如果是农民(17张牌)
+                elif len(hand_cards) == 17:
+                    # 使用农民模型预测分数
+                    score = FarmerModel.predict(hand_cards, "up")
+                    # 显示分数
+                    self.bid_display.emit("得分：" + str(round(score, 3)))
+                    # 根据分数给出加倍建议并执行
+                    if self.bid_thresholds[1] + 0.05 < score <= self.bid_thresholds[2] + 0.05:
+                        # if self.auto_sign:
+                        #     helper.ClickOnImage("jiabei", self.ButtonsPos)
+                        self.suggest_2.emit("建议： 加倍")
+                    elif score > self.bid_thresholds[2] + 0.05:
+                        # if self.auto_sign:
+                        #     helper.ClickOnImage("chaojijiabei", self.ButtonsPos)
+                        self.suggest_2.emit("建议： 超级加倍")
+                    else:
+                        # if self.auto_sign:
+                        #     helper.ClickOnImage("bujiabei", self.ButtonsPos)
+                        self.suggest_2.emit("建议： 不加倍")
+                    break
             # 检测并处理明牌按钮
-            if find_pic("mingpai_btn", self.ButtonsPos):
-                if score > self.bid_thresholds[3]:
-                    if self.auto_sign:
-                        helper.ClickOnImage("mingpai_btn", self.ButtonsPos)
-                time.sleep(1)
-                break
+            # # if find_pic("mingpai_btn", self.ButtonsPos):
+            # if score > self.bid_thresholds[3]:
+            #         # if self.auto_sign:
+            #         #     # helper.ClickOnImage("mingpai_btn", self.ButtonsPos)
+            #     time.sleep(1)
+            #     break
 
             # 等待0.5秒
             time.sleep(0.5)
