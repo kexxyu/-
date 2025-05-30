@@ -4,6 +4,13 @@ from PIL import Image, ImageTk
 import numpy as np
 import re
 import os
+import cv2
+import sys
+import traceback
+
+# 添加项目根目录到系统路径
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 class CoordinateVisualizer:
     def __init__(self, root):
@@ -56,6 +63,17 @@ class CoordinateVisualizer:
         # 创建坐标显示标签
         self.coord_label = ttk.Label(self.control_frame, text="当前坐标: ")
         self.coord_label.pack(pady=5)
+        
+        # 在control_frame中添加识别按钮
+        self.recognize_button = ttk.Button(self.control_frame, text="识别卡牌", command=self.recognize_cards)
+        self.recognize_button.pack(pady=5)
+        
+        # 添加结果显示区域
+        self.result_frame = ttk.LabelFrame(self.control_frame, text="识别结果")
+        self.result_frame.pack(pady=5, fill=tk.X)
+        
+        self.result_text = tk.Text(self.result_frame, height=3, width=30)
+        self.result_text.pack(pady=5, padx=5, fill=tk.X)
         
         # 创建图片显示区域
         self.canvas_frame = ttk.Frame(self.main_frame)
@@ -304,6 +322,51 @@ class CoordinateVisualizer:
             
         except Exception as e:
             messagebox.showerror("错误", f"保存截图时出错: {str(e)}")
+
+    def recognize_cards(self):
+        """识别选中区域的卡牌"""
+        if not self.original_image:
+            messagebox.showerror("错误", "请先加载图片")
+            return
+        
+        try:
+            # 获取坐标字符串
+            coord_str = self.coord_entry.get().strip()
+            numbers = re.findall(r'\d+', coord_str)
+            
+            if len(numbers) < 4:
+                messagebox.showerror("错误", "请先绘制选择框")
+                return
+            
+            # 提取坐标值
+            x = int(numbers[0])
+            y = int(numbers[1])
+            width = int(numbers[2])
+            height = int(numbers[3])
+            
+            # 裁剪图片
+            cropped_image = self.original_image.crop((x, y, x + width, y + height))
+            
+            # 转换为OpenCV格式
+            img = cv2.cvtColor(np.array(cropped_image), cv2.COLOR_RGB2BGR)
+            
+            # 导入必要的模块
+            from main import cards_info, GameHelper, helper
+            
+            # 确保GameHelper已初始化
+            if not hasattr(helper, 'PicsCV'):
+                GameHelper()
+                
+            # 调用cards_info函数
+            result = cards_info(img, (0, 0, width, height))
+            
+            # 显示结果
+            self.result_text.delete(1.0, tk.END)
+            self.result_text.insert(tk.END, f"识别结果: {result}")
+            
+        except Exception as e:
+            messagebox.showerror("错误", f"识别失败: {str(e)}")
+            traceback.print_exc()  # 打印详细的错误信息
 
 if __name__ == "__main__":
     root = tk.Tk()

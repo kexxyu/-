@@ -251,50 +251,27 @@ class GameHelper:
             # print(result)
 
     def LeftClick(self, pos):
-        """
-        在指定位置执行鼠标左键点击
-        增加延时和错误处理，提高点击成功率
-        """
         try:
-            # 将相对坐标转换为实际窗口坐标
             x = int((pos[0] / 1280) * self.RealRate[0])
             y = int((pos[1] / 720) * self.RealRate[1])
-
-            # 获取窗口位置
             left, top, right, bottom = win32gui.GetWindowRect(self.Handle)
-            # 计算绝对坐标
             abs_x, abs_y = int(left + x), int(top + y)
-            
-            # 保存客户区相对坐标
             client_pos = (x, y)
             tmp = win32api.MAKELONG(client_pos[0], client_pos[1])
-
-            # 激活窗口并等待
             win32gui.SetForegroundWindow(self.Handle)
-            self.sleep(200)  # 等待窗口激活
-            
-            # 移动鼠标
+            self.sleep(200)
             win32api.SetCursorPos((abs_x, abs_y))
-            self.sleep(100)  # 等待鼠标移动
-            
-            # 方法1：使用 mouse_event
+            self.sleep(100)
             win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
-            self.sleep(50)  # 按下延时
+            self.sleep(50)
             win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
-            
-            # 方法2：如果方法1失败，使用 SendMessage
             if not self.check_click_success():
                 win32gui.SendMessage(self.Handle, win32con.WM_LBUTTONDOWN, win32con.MK_LBUTTON, tmp)
                 self.sleep(50)
                 win32gui.SendMessage(self.Handle, win32con.WM_LBUTTONUP, win32con.MK_LBUTTON, tmp)
-            
-            self.sleep(200)  # 等待点击操作完成
-            
-            # 将鼠标移到固定位置
+            self.sleep(200)
             win32api.SetCursorPos((int(left + 1000), int(top + 550)))
-            
             return True
-            
         except Exception as e:
             print(f"点击失败: {str(e)}")
             return False
@@ -308,7 +285,7 @@ class GameHelper:
             # 坐标转换
             x = int((pos[0] / 1280) * self.RealRate[0])
             y = int((pos[1] / 720) * self.RealRate[1])
-            
+
             # 获取窗口位置
             left, top, right, bottom = win32gui.GetWindowRect(self.Handle)
             abs_x, abs_y = int(left + x), int(top + y)

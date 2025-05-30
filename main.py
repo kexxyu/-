@@ -239,9 +239,9 @@ class Worker(QThread):
         self.LPassPos = (321, 253, 99, 63)  # 左边不出区域
         self.RPassPos = (825, 259, 105, 54)  # 右边不出区域
         self.MPassPos = (497, 396, 169, 69)  # 我的不出区域
-        self.Mypics = (85, 615, 54, 72)  # 我的头像区域
-        self.Leftpics = (95, 216, 88, 100)  # 左边的头像区域
-        self.Rightpics = (1062, 213, 95, 100)  # 右边的头像区域
+        self.MyPics = (78, 619, 81, 81)  # 我的头像区域
+        self.LeftPics = (119, 230, 50, 64)  # 左边的头像区域
+        self.RightPics = (1074, 231, 55, 59)  # 右边的头像区域
 
 
         self.model_path_dict = {
@@ -311,7 +311,6 @@ class Worker(QThread):
         else:
             self.name = 1
 
-    
     # 识别图像中的卡牌信息的方法
     # 参数:img-截图图像,pos-识别区域,mark-标记前缀,confidence-匹配置信度
     def cards_info(self, img, pos, mark="", confidence=0.8):
@@ -360,7 +359,7 @@ class Worker(QThread):
                             # 如果是红色
                             if b[0] == "Red":
                                 # 根据置信度判断是大王还是小王
-                                if b[1] > 0.7:
+                                if b[1] > 0.55:
                                     D_king = 1
                                 else:
                                     X_king = 1
@@ -424,7 +423,6 @@ class Worker(QThread):
         # 返回识别到的三张底牌字符串
         return cards
 
-    @trace_function
     # 点击卡牌的方法,接收要出的牌作为参数
     def click_cards(self, out_cards):
         try:
@@ -847,12 +845,12 @@ class Worker(QThread):
                         helper.ClickOnImage("qiang_btn", self.ButtonsPos)
                     self.suggest_1.emit("建议： 抢地主")
 
+        
             # 检测并处理加倍按钮
             # if find_pic("jiabei", self.ButtonsPos):
-            if find_pic("dizhu", self.Mypics) or find_pic("dizhu", self.Leftpics) or find_pic("dizhu", self.Rightpics):
-                print("成功识别over标志")
+            if find_pic("dadizhu", self.MyPics) or find_pic("xiaodizhu", self.LeftPics) or find_pic("xiaodizhu", self.RightPics):
                 # 等待1秒
-                time.sleep(2)
+                time.sleep(1)
                 # 获取底牌
                 self.three_cards_real = self.find_three_cards()
                 # 打印底牌信息
@@ -901,11 +899,15 @@ class Worker(QThread):
                         #     helper.ClickOnImage("bujiabei", self.ButtonsPos)
                         self.suggest_2.emit("建议： 不加倍")
                     break
+
+         
+
+
             # 检测并处理明牌按钮
-            # # if find_pic("mingpai_btn", self.ButtonsPos):
-            # if score > self.bid_thresholds[3]:
-            #         # if self.auto_sign:
-            #         #     # helper.ClickOnImage("mingpai_btn", self.ButtonsPos)
+            # if find_pic("mingpai_btn", self.ButtonsPos):
+            #     if score > self.bid_thresholds[3]:
+            #         if self.auto_sign:
+            #             helper.ClickOnImage("mingpai_btn", self.ButtonsPos)
             #     time.sleep(1)
             #     break
 

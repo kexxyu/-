@@ -1,0 +1,2 @@
+23:51:02 - 来自: test_cards_info.py:10 - test_cards_info        | 调用函数            | main.__init__                            | 参数: {'self': '<main.Worker object at 0x000001F98E016EE0>'}
+23:51:02 - 来自: test_cards_info.py:10 - test_cards_info        | 函数返回            | main.__init__                            | 返回值: None
