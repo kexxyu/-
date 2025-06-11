@@ -234,7 +234,7 @@ class Worker(QThread):
         self.MyPlayedPos = (292, 333, 663, 123)  # 我的出牌区域
         self.LCardsPos = (211, 239, 390, 84)  # 左边出牌区域
         self.RCardsPos = (629, 247, 411, 78)  # 右边出牌区域
-        self.ThreeCardsPos = (958, 53, 139, 59)  # 地主底牌区域
+        self.ThreeCardsPos = (960, 58, 117, 20)  # 地主底牌区域
         self.ButtonsPos = (214, 380, 791, 93)  # 出牌按钮区域
         self.LPassPos = (321, 253, 99, 63)  # 左边不出区域
         self.RPassPos = (825, 259, 105, 54)  # 右边不出区域
@@ -242,6 +242,8 @@ class Worker(QThread):
         self.MyPics = (78, 619, 81, 81)  # 我的头像区域
         self.LeftPics = (119, 230, 50, 64)  # 左边的头像区域
         self.RightPics = (1074, 231, 55, 59)  # 右边的头像区域
+        self.RPassDsPos = (961, 262, 74, 72)  # 右边不出桌面图标
+        self.LPassDsPos = (213, 256, 83, 74)  # 左边不出桌面图标
 
 
         self.model_path_dict = {
@@ -359,7 +361,7 @@ class Worker(QThread):
                             # 如果是红色
                             if b[0] == "Red":
                                 # 根据置信度判断是大王还是小王
-                                if b[1] > 0.55:
+                                if b[1] > 0.58:
                                     D_king = 1
                                 else:
                                     X_king = 1
@@ -564,16 +566,42 @@ class Worker(QThread):
                         cards_dict[n].remove(cards_dict[n][-1])
                 # 如果实际选中的牌多于应该选的牌
                 elif len(sec_cards) > len(cards):
+                    # 遍历应该选中的牌,从实际选中的牌中移除这些牌
+                    # 这样剩下的就是多选的牌
                     for m in cards:
+                        # 每次替换一张牌,使用count=1确保只替换一次
+                        # 从实际选中的牌(sec_cards)中移除一张指定的牌(m)
+                        # sec_cards: 实际选中的牌的字符串,如"AAK"
+                        # m: 需要移除的一张牌,如"A" 
+                        # "": 替换为空字符串,即删除这张牌
+                        # 1: 只替换一次,避免把所有相同的牌都删掉
+                        # 例如:sec_cards="AAK",m="A",结果为"AK"
                         sec_cards = sec_cards.replace(m, "", 1)
-                    # 取消多选的牌
+                    
+                    # 遍历多选的牌,需要取消选中这些牌
                     for n in sec_cards:
+                        # 从已移除牌记录字典中获取这张牌的第一条记录
+                        # remove_dict[n][0]存储了牌的完整信息(x,y,width,height)
+                        # [0:2]只取前两个值,即x和y坐标
                         cars_pos3 = remove_dict[n][0][0:2]
+                        
+                        # 计算实际需要点击的位置
+                        # x坐标需要右移18像素以点击牌的中心位置
+                        # y坐标需要下移90像素以点击牌的中心位置
                         point3 = cars_pos3[0] + 18, cars_pos3[1] + 90
+                        
+                        # 调用helper对象的LeftClick2方法
+                        # 在计算出的位置执行鼠标左键点击,取消选中该牌
                         helper.LeftClick2(point3)
-                        time.sleep(0.3)
+                        
+                        # 点击后等待0.3秒,确保点击动作完成
+                        # 防止点击过快导致操作不成功
+                        time.sleep(1)
+                        
+                        # 从已移除牌的记录字典中删除这张牌的第一条记录
+                        # 因为这张牌已经被取消选中了
                         remove_dict[n].remove(remove_dict[n][0])
-        # 异常处理
+        # 处理click_cards方法中可能出现的所有异常
         except Exception as e:
             print("检测到出牌错误")
             traceback.print_exc()
@@ -1149,24 +1177,35 @@ class Worker(QThread):
                             play_card = helper.LocateOnScreen("play_btn", region=self.ButtonsPos, confidence=0.7)
                             # 等待直到找到出牌按钮
                             while play_card is None:
+                                # 如果游戏已停止或关闭自动模式则退出
                                 if not self.RunGame or not self.auto_sign:
                                     return
+                                # 等待0.2秒后继续查找
                                 time.sleep(0.2)
+                                # 再次尝试寻找出牌按钮
                                 play_card = helper.LocateOnScreen("play_btn", region=self.ButtonsPos, confidence=0.7)
+                                # 检测是否出现开始按钮(游戏是否重新开始)
                                 self.detect_start_btn()
 
                             # 尝试点击出牌按钮
                             try:
                                 helper.ClickOnImage("play_btn", region=self.ButtonsPos, confidence=0.7)
                             except Exception as e:
+                                # 如果点击失败,打印错误信息
                                 print("没找到出牌按钮")
+                            # 打印点击成功信息
                             print("点击出牌按钮")
-                            time.sleep(0.2)
+                            # 等待0.2秒
+                            time.sleep(0.8)
                             # 再次检查出牌按钮并重试
                             play_card = helper.LocateOnScreen("play_btn", region=self.ButtonsPos, confidence=0.7)
+                            # 如果按钮仍然存在,说明第一次点击可能失败,进行重试
                             if play_card is not None:
+                                # 重新点击要出的牌
                                 self.click_cards(action_message["action"])
+                                # 等待0.5秒
                                 time.sleep(0.5)
+                                # 再次点击出牌按钮
                                 helper.ClickOnImage("play_btn", region=self.ButtonsPos, confidence=0.7)
 
                             # 更新环境中的出牌信息
@@ -1322,7 +1361,8 @@ class Worker(QThread):
                 self.right_cards_display.emit(sequence_right)
 
                 # 检测下家是否点击不出按钮
-                pass_flag = helper.LocateOnScreen('buchu', region=self.RPassPos)
+                # pass_flag = helper.LocateOnScreen('buchu', region=self.RPassPos)
+                pass_flag = helper.LocateOnScreen('rightbuchudesk', region=self.RPassDsPos)
                 # 获取下家出的牌
                 rightCards = self.find_other_cards(self.RCardsPos)
                 # 打印等待提示
@@ -1343,7 +1383,8 @@ class Worker(QThread):
                     if have_ani:
                         time.sleep(0.2)
                     # 再次检测不出按钮
-                    pass_flag = helper.LocateOnScreen('buchu', region=self.RPassPos)
+                    # pass_flag = helper.LocateOnScreen('buchu', region=self.RPassPos)
+                    pass_flag = helper.LocateOnScreen('rightbuchudesk', region=self.RPassDsPos)
                     # 再次获取出牌
                     rightCards = self.find_other_cards(self.RCardsPos)
                     # 检测开始按钮
@@ -1385,7 +1426,8 @@ class Worker(QThread):
                         # 如果两次获取的牌不同或为空
                         else:
                             # 检测不出按钮
-                            pass_flag = helper.LocateOnScreen('buchu', region=self.RPassPos)
+                            # pass_flag = helper.LocateOnScreen('buchu', region=self.RPassPos)
+                            pass_flag = helper.LocateOnScreen('rightbuchudesk', region=self.RPassDsPos)
                             # 如果点击了不出按钮
                             if pass_flag is not None:
                                 # 记录为不出
@@ -1425,7 +1467,8 @@ class Worker(QThread):
                 self.left_cards_display.emit(sequence_left)
 
                 # 检测上家是否点击不出按钮
-                pass_flag = helper.LocateOnScreen('buchu', region=self.LPassPos)
+                # pass_flag = helper.LocateOnScreen('buchu', region=self.LPassPos)
+                pass_flag = helper.LocateOnScreen('leftbuchudesk', region=self.LPassDsPos)
                 # 获取上家出的牌
                 leftCards = self.find_other_cards(self.LCardsPos)
                 # 打印等待提示
@@ -1445,7 +1488,8 @@ class Worker(QThread):
                     if have_ani:
                         time.sleep(0.2)
                     # 再次检测不出按钮
-                    pass_flag = helper.LocateOnScreen('buchu', region=self.LPassPos)
+                    # pass_flag = helper.LocateOnScreen('buchu', region=self.LPassPos)
+                    pass_flag = helper.LocateOnScreen('leftbuchudesk', region=self.LPassDsPos)
                     # 再次获取出牌
                     leftCards = self.find_other_cards(self.LCardsPos)
                     # 检测开始按钮
@@ -1486,7 +1530,8 @@ class Worker(QThread):
                         # 如果两次获取的牌不同或为空
                         else:
                             # 检测不出按钮
-                            pass_flag = helper.LocateOnScreen('buchu', region=self.LPassPos)
+                            # pass_flag = helper.LocateOnScreen('buchu', region=self.LPassPos)
+                            pass_flag = helper.LocateOnScreen('leftbuchudesk', region=self.LPassDsPos)
                             # 如果点击了不出按钮
                             if pass_flag is not None:
                                 # 记录为不出
